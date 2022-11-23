@@ -17,18 +17,19 @@ export default function DropdownBtn() {
   }, []);
 
   return (
-    <div className="inline-flex items-stretch bg-white relative">
-      <span
+    <div className="w-full flex justify-center border-t md:border-none p-2.5 md:p-0 bg-white relative">
+      <button
+        ref={dropRef}
         className="text-sm font-medium text-gray-500 hover:text-orange-500 flex items-center cursor-pointer"
         onClick={() => setOpen((curr) => !curr)}
       >
         Services
         <MdOutlineArrowDropDown className="h-4 w-4" />
-      </span>
+      </button>
 
-      <div className={`${open ? "block" : "hidden "}`} ref={dropRef}>
+      <div className={`${open ? "block" : "hidden "}`}>
         <div
-          className="absolute left-0 z-10 mt-11 w-44 origin-top-left rounded-md border border-gray-100 bg-white shadow-lg"
+          className="origin-top-right absolute left-1/2 -translate-x-1/2 z-10 mt-8 md:mt-11 w-56 md:w-44 rounded-md border border-gray-100 bg-white shadow-lg"
           role="menu"
         >
           <div className="p-2">
