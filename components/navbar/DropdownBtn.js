@@ -17,7 +17,7 @@ export default function DropdownBtn() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center border-t md:border-none p-2.5 md:p-0 bg-white relative">
+    <div className="w-full flex justify-center border-t md:border-none p-3 md:p-0 bg-white relative">
       <button
         ref={dropRef}
         className="text-sm font-medium text-gray-500 hover:text-orange-500 flex items-center cursor-pointer"

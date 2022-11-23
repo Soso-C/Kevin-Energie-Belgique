@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Banner from "../components/header/Banner";
 import Navbar from "../components/navbar/Navbar";
 import TopBarHeader from "../components/topbarheader/TopBarHeader";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <header>
         <TopBarHeader />
         <Navbar />
+        <Banner />
       </header>
     </div>
   );

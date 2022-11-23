@@ -5,14 +5,9 @@ export const navbarData = [
     href: "/",
   },
   {
-    id: 2,
-    title: "Présentation",
-    href: "/presentation",
-  },
-  {
     id: 3,
-    title: "Réalisation",
-    href: "/realisation",
+    title: "Réalisations",
+    href: "/realisations",
   },
   {
     id: 4,
