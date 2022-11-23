@@ -10,9 +10,9 @@ export default function Navbar() {
   return (
     <div aria-label="Site Header" className="bg-white">
       <div className="mx-auto max-w-[1400px] px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-[70px] items-center justify-between">
           <div className="">
-            <Link className="block text-teal-600" href="/">
+            <Link className="block" href="/">
               <Logo />
             </Link>
           </div>
@@ -20,17 +20,11 @@ export default function Navbar() {
           <div className="md:flex jutify-between md:items-center">
             <nav aria-label="Site Nav" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
+                <DropdownBtn />
                 {navbarData.map((item) => {
-                  return (
-                    <NavbarItem
-                      key={item.id}
-                      title={item.title}
-                      href={item.href}
-                    />
-                  );
+                  return <NavbarItem key={item.id} {...item} />;
                 })}
               </ul>
-              {/* <DropdownBtn /> */}
             </nav>
 
             <div className="flex items-center gap-4">

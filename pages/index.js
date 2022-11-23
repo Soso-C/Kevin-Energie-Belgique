@@ -10,7 +10,7 @@ export default function Home() {
         <title>KD Energie</title>
         <meta
           name="description"
-          content="KD Energie est une jeune entreprise avec plus de 10 ans d'expériences et qui vous proposera ses services de chauffage, sanitaire, ventilation, pompe a chaleur, pellets située dans la commune d'Aywaille"
+          content="KD Energie est une jeune entreprise avec plus de 10 ans d'expériences et qui vous proposera ses services de chauffage, sanitaire, ventilation, pompe a chaleur, pellets située dans la commune d'Aywaille et de ses alentours"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

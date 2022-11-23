@@ -1,74 +1,63 @@
-import React from "react";
+import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 export default function DropdownBtn() {
+  const [open, setOpen] = useState(false);
+  const dropRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropRef.current && !dropRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <div class="inline-flex items-stretch rounded-md border bg-white">
-      <a
-        href="/edit"
-        class="rounded-l-md px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700"
+    <div className="inline-flex items-stretch bg-white relative">
+      <span
+        className="text-sm font-medium text-gray-500 hover:text-orange-500 flex items-center cursor-pointer"
+        onClick={() => setOpen((curr) => !curr)}
       >
-        Edit
-      </a>
+        Services
+        <MdOutlineArrowDropDown className="h-4 w-4" />
+      </span>
 
-      <div class="relative">
-        <button
-          type="button"
-          class="inline-flex h-full items-center justify-center rounded-r-md border-l border-gray-100 px-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700"
-        >
-          <span class="sr-only">Menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-
+      <div className={`${open ? "block" : "hidden "}`} ref={dropRef}>
         <div
-          class="absolute right-0 z-10 mt-4 w-56 origin-top-right rounded-md border border-gray-100 bg-white shadow-lg"
+          className="absolute left-0 z-10 mt-11 w-44 origin-top-left rounded-md border border-gray-100 bg-white shadow-lg"
           role="menu"
         >
-          <div class="p-2">
-            <a
-              href="#"
-              class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              role="menuitem"
-            >
-              View on Storefront
-            </a>
-
-            <a
-              href="#"
-              class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              role="menuitem"
-            >
-              View Warehouse Info
-            </a>
-
-            <a
-              href="#"
-              class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              role="menuitem"
-            >
-              Duplicate Product
-            </a>
-
-            <a
-              href="#"
-              class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              role="menuitem"
-            >
-              Unpublish Product
-            </a>
+          <div className="p-2">
+            {dropDownData.map((item) => {
+              return <DropDownItem key={item.id} {...item} />;
+            })}
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+const dropDownData = [
+  { id: 1, title: "Chauffage", href: "/chauffage" },
+  { id: 2, title: "Ventilation", href: "/ventilation" },
+  { id: 3, title: "Pompe à chaleur", href: "/pompe-a-chaleur" },
+  { id: 4, title: "Sanitaire", href: "/sanitaire" },
+  { id: 5, title: "Pellets", href: "/pellets" },
+];
+
+const DropDownItem = ({ href, title }) => {
+  return (
+    <Link
+      href={href}
+      className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-orange-500"
+      role="menuitem"
+    >
+      {title}
+    </Link>
+  );
+};

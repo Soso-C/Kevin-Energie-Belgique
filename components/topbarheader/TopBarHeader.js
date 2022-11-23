@@ -13,14 +13,14 @@ export default function TopBarHeader() {
         </h1>
         <ul className="flex space-x-4">
           <RightItem
-            href={"mailto:kd-energie@gmail.com"}
+            href={"mailto:contact@kd-energie.be"}
             icon={<AiFillMail />}
-            text={"kd-energie@gmail.com"}
+            text={"contact@kd-energie.be"}
           />
           <RightItem
-            href={"tel:00000000"}
+            href={"tel:0468381079"}
             icon={<BsFillTelephoneFill />}
-            text={"0000000"}
+            text={"0468381079"}
           />
         </ul>
       </div>
