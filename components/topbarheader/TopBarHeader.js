@@ -14,12 +14,12 @@ export default function TopBarHeader() {
         <ul className="flex space-x-4">
           <RightItem
             href={"mailto:contact@kd-energie.be"}
-            icon={<AiFillMail />}
+            icon={<AiFillMail className="h-6 w-6" />}
             text={"contact@kd-energie.be"}
           />
           <RightItem
             href={"tel:0468381079"}
-            icon={<BsFillTelephoneFill />}
+            icon={<BsFillTelephoneFill className="h-6 w-6" />}
             text={"0468381079"}
           />
         </ul>
@@ -33,7 +33,7 @@ const RightItem = ({ href, icon, text }) => {
     <li>
       <a href={href} className="flex items-center gap-1">
         {icon}
-        {text}
+        <span>{text}</span>
       </a>
     </li>
   );
