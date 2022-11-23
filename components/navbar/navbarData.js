@@ -11,16 +11,11 @@ export const navbarData = [
   },
   {
     id: 3,
-    title: "Services",
-    href: "/services",
-  },
-  {
-    id: 4,
     title: "Réalisation",
     href: "/realisation",
   },
   {
-    id: 5,
+    id: 4,
     title: "Contact",
     href: "/contact",
   },

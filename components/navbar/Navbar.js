@@ -7,6 +7,7 @@ import { navbarData } from "./navbarData";
 import NavbarItem from "./NavbarItem";
 
 export default function Navbar() {
+  console.log();
   return (
     <div aria-label="Site Header" className="bg-white">
       <div className="mx-auto max-w-[1400px] px-4">
@@ -20,10 +21,14 @@ export default function Navbar() {
           <div className="md:flex jutify-between md:items-center">
             <nav aria-label="Site Nav" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
-                <DropdownBtn />
-                {navbarData.map((item) => {
+                {/* {navbarData.map((item) => {
                   return <NavbarItem key={item.id} {...item} />;
-                })}
+                })} */}
+                <NavbarItem {...navbarData[0]} />
+                <NavbarItem {...navbarData[1]} />
+                <DropdownBtn />
+                <NavbarItem {...navbarData[2]} />
+                <NavbarItem {...navbarData[3]} />
               </ul>
             </nav>
 
