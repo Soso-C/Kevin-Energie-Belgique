@@ -29,7 +29,7 @@ export default function SectionServices() {
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href={"/"}
-            title={"Chauffage"}
+            title="Chauffage"
             img={"/Chaudiere.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />

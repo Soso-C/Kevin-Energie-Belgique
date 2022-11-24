@@ -5,6 +5,7 @@ import DevisGratuit from "../components/main/devisgratuit/DevisGratuit";
 import Presentation from "../components/main/presentation/Presentation";
 import SectionServices from "../components/main/sectionServices/SectionServices";
 import Navbar from "../components/navbar/Navbar";
+import Slider from "../components/slider/Slider";
 import TopBarHeader from "../components/topbarheader/TopBarHeader";
 
 export default function Home() {
@@ -21,7 +22,8 @@ export default function Home() {
       <header>
         <TopBarHeader />
         <Navbar />
-        <Banner />
+        {/* <Banner /> */}
+        <Slider />
       </header>
       <main>
         <DevisGratuit />
