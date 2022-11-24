@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SectionItem({ icon, title, text, href = "#", img }) {
   return (
-    <div className="flex flex-col items-center space-y-4 p-5 rounded-lg shadow text-gray-500">
+    <div className="flex flex-col items-center space-y-4 p-5 rounded-lg shadow text-gray-500 hover:scale-105 duration-[400ms]">
       <div className="flex flex-col items-center text-orange-500">
         <span>{icon}</span>
         <h3 className="font-medium">{title}</h3>
