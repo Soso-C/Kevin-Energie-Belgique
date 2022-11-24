@@ -30,7 +30,7 @@ export default function Navbar() {
           <ul
             className={`${
               openNav ? " flex" : " hidden"
-            } flex-col justify-center items-center w-full h-full mt-6 md:mt-0 md:flex-row md:w-auto md:space-x-8 md:flex text-sm`}
+            } flex-col justify-center items-center w-full h-full mt-6 md:mt-0 md:flex-row md:w-auto md:space-x-8 md:flex text-md`}
           >
             <NavbarItem {...navbarData[0]} />
             <DropdownBtn />
