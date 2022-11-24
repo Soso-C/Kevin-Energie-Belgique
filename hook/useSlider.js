@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { imgSlider } from "../components/slider/imgSlider";
+import { imgSlider } from "../components/slider/imgSliderData";
 
 export default function useSlider() {
   const [slide, setSlide] = useState({
