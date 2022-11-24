@@ -21,4 +21,8 @@ export const imgSlider = [
     image: "/slide_ventil.jpg",
     id: 4,
   },
+  {
+    image: "/entretiens_depannage.jpg",
+    id: 5,
+  },
 ];

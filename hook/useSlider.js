@@ -30,9 +30,9 @@ export default function useSlider() {
         setSlide({ index: slide.index - 1, inProgress: false });
       }, 400);
     } else if (slide.index === 1 && !slide.inProgress) {
-      setSlide({ index: 4, inProgress: true });
+      setSlide({ index: imgSlider.length, inProgress: true });
       setTimeout(() => {
-        setSlide({ index: 4, inProgress: false });
+        setSlide({ index: imgSlider.length, inProgress: false });
       }, 400);
     }
   };
