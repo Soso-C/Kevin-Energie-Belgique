@@ -31,7 +31,6 @@ export default function Navbar() {
             } flex-col justify-center items-center w-full h-full mt-6 md:mt-0 md:flex-row md:w-auto md:space-x-8 md:flex text-sm`}
           >
             <NavbarItem {...navbarData[0]} />
-
             <DropdownBtn />
             <NavbarItem {...navbarData[1]} />
             <NavbarItem {...navbarData[2]} />

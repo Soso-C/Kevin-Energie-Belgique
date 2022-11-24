@@ -4,7 +4,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function TopBarHeader() {
   return (
-    <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#464646]">
+    <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#464646] fixed top-0 w-full z-10">
       <div className="flex w-full max-w-[1400px] justify-between items-center mx-auto md:px-4 font-bold text-white">
         <h1 className="text-md ">
           <span className="">Chauffage</span> {" - "}
