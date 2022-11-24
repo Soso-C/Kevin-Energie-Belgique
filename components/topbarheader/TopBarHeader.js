@@ -4,7 +4,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function TopBarHeader() {
   return (
-    <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#F98B16]">
+    <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#464646]">
       <div className="flex w-full max-w-[1400px] justify-between items-center mx-auto md:px-4 font-bold text-white">
         <h1 className="text-md ">
           <span className="">Chauffage</span> {" - "}
@@ -31,7 +31,7 @@ export default function TopBarHeader() {
 const RightItem = ({ href, icon, text }) => {
   return (
     <li>
-      <a href={href} className="flex items-center gap-1">
+      <a href={href} className="flex items-center gap-1 hover:text-orange-500">
         {icon}
         <span>{text}</span>
       </a>

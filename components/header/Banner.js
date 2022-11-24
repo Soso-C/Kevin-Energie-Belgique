@@ -3,13 +3,8 @@ import React from "react";
 
 export default function Banner() {
   return (
-    <div className="relative h-96 w-full sm:mt-[50px] md:mt-0">
-      <Image
-        src={"/solarpanel.jpg"}
-        objectFit="cover"
-        layout="fill"
-        alt="test"
-      />
+    <div className="relative h-96 lg:h-[500px] w-full mt-[70px]">
+      <Image src={"/pump.png"} objectFit="cover" layout="fill" alt="image" />
     </div>
   );
 }

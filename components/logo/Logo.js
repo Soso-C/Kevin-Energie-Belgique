@@ -8,6 +8,7 @@ export default function Logo() {
       alt="logo KD Energie"
       width={200}
       height={200}
+      quality={100}
     />
   );
 }
