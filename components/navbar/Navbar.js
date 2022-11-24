@@ -13,7 +13,9 @@ export default function Navbar() {
     <div className="bg-white shadow-md fixed top-0 z-10 w-full md:mt-[50px]">
       <nav className="max-w-[1400px] mx-auto items-center flex p-4">
         <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
-          <Logo />
+          <Link href={"/"}>
+            <Logo />
+          </Link>
           <button
             className="block md:hidden"
             onClick={() => setOpenNav((curr) => !curr)}
