@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiXMark } from "react-icons/hi2";
-import Logo from "../logo/Logo";
+import Logo from "../../logo/Logo";
 import DropdownBtn from "./DropdownBtn";
 import { navbarData } from "./navbarData";
 import NavbarItem from "./NavbarItem";

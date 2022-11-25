@@ -22,6 +22,13 @@ export default function SectionServices() {
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
+            href={"/"}
+            title="Chauffage"
+            img={"/Chaudiere.jpg"}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+          />
+          <SectionItem
+            icon={<IoFlame className="h-8 w-8" />}
             href="/"
             title="Pellets"
             img={"/Slide_Pellet.jpg"}
@@ -29,9 +36,9 @@ export default function SectionServices() {
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
-            href={"/"}
-            title="Chauffage"
-            img={"/Chaudiere.jpg"}
+            href="/"
+            title="Pompe à chaleur"
+            img={"/pump.png"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
@@ -39,13 +46,6 @@ export default function SectionServices() {
             href="/"
             title="Ventilation"
             img={"/slide_ventil.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
-          />
-          <SectionItem
-            icon={<IoFlame className="h-8 w-8" />}
-            href="/"
-            title="Pompe à chaleur"
-            img={"/pump.png"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem

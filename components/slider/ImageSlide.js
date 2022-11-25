@@ -13,7 +13,7 @@ export default function ImageSlide({ slide, id, image, index }) {
         src={image}
         alt={`img ${index}`}
         objectFit="cover"
-        layout="fill"
+        fill
         quality={100}
       />
     </div>

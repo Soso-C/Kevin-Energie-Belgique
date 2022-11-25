@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import OrangeBtn from "../../button/orangeButton/OrangeBtn";
 
 export default function Presentation() {
   return (
@@ -13,9 +14,9 @@ export default function Presentation() {
           <div className=" flex-col justify-center hidden lg:flex">
             <div className="relative h-60 overflow-hidden lg:h-80">
               <Image
-                alt="Party"
+                alt="Logo KD Energie"
                 src="/flamme.png"
-                layout="fill"
+                fill
                 objectFit="contain"
               />
             </div>
@@ -50,9 +51,7 @@ export default function Presentation() {
                 vos questions.`}
               </p>
               <div className="flex items-center justify-center pt-10">
-                <button className="px-4 py-2 bg-orange-500 font-medium w-44 text-white rounded-full hover:text-gray-500 text-lg">
-                  {"Devis Gratuit"}
-                </button>
+                <OrangeBtn large={true}>Devis gratuit</OrangeBtn>
               </div>
             </article>
           </div>

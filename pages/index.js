@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Banner from "../components/header/Banner";
-import DevisGratuit from "../components/main/devisgratuit/DevisGratuit";
+import Navbar from "../components/header/navbar/Navbar";
+import TopBarHeader from "../components/header/topbarheader/TopBarHeader";
+import Slider from "/components/slider/Slider";
+import Partenaire from "../components/main/partenaires/Partenaire";
 import Presentation from "../components/main/presentation/Presentation";
 import SectionServices from "../components/main/sectionServices/SectionServices";
-import Navbar from "../components/navbar/Navbar";
-import Slider from "../components/slider/Slider";
-import TopBarHeader from "../components/topbarheader/TopBarHeader";
 
 export default function Home() {
   return (
@@ -32,6 +31,7 @@ export default function Home() {
         {/* <DevisGratuit /> */}
         <Presentation />
         <SectionServices />
+        <Partenaire />
       </main>
     </div>
   );

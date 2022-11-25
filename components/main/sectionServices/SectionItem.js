@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import OrangeBtn from "../../button/orangeButton/OrangeBtn";
 
 export default function SectionItem({ icon, title, text, href = "#", img }) {
   return (
@@ -11,12 +12,10 @@ export default function SectionItem({ icon, title, text, href = "#", img }) {
       </div>
       <p className="text-center">{text}</p>
       <div className="relative h-[180px] w-full">
-        <Image src={img} objectFit="cover" layout="fill" alt="image" />
+        <Image src={img} objectFit="cover" fill alt="image" />
       </div>
       <Link href={href}>
-        <button className="px-4 py-2 bg-orange-500 font-medium w-44 text-white rounded-full hover:text-gray-500">
-          {"Plus d'information"}
-        </button>
+        <OrangeBtn>{`Plus d'information`}</OrangeBtn>
       </Link>
     </div>
   );
