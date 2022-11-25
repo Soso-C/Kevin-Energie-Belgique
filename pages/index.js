@@ -15,7 +15,11 @@ export default function Home() {
         <title>KD Energie | Accueil</title>
         <meta
           name="description"
-          content="KD Energie est une jeune entreprise avec plus de 10 ans d'expériences et qui vous proposera ses services de chauffage, sanitaire, ventilation, pompe a chaleur, pellets située dans la commune d'Aywaille et de ses alentours"
+          content="KD Énergie située à Aywaille et ses alentours est une jeune
+          entreprise spécialisée vous proposant ses services
+          d'installation, dépannage et d'entretiens chauffage, sanitaire,
+          ventilation (simple - double flux), pompe à chaleur et tous
+          systèmes de chaudière à condensation gaz et mazout."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

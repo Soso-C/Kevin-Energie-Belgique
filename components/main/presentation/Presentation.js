@@ -23,31 +23,31 @@ export default function Presentation() {
 
           <div className="py-10">
             <article className="space-y-4 text-gray-600 text-justify font-medium">
-              <p className="">
-                KD Énergie située à Aywaille et ses alentours est une jeune
+              <p>
+                {`KD Énergie située à Aywaille et ses alentours est une jeune
                 entreprise spécialisée vous proposant ses services
                 d'installation, dépannage et d'entretiens chauffage, sanitaire,
                 ventilation (simple - double flux), pompe à chaleur et tous
-                systèmes de chaudière à condensation gaz et mazout.
+                systèmes de chaudière à condensation gaz et mazout.`}
               </p>
-              <p className="">
-                Avec plus de 10 ans d'expérience dans le domaine, nous mettrons
+              <p>
+                {`Avec plus de 10 ans d'expérience dans le domaine, nous mettrons
                 tous en oeuvre pour comprendre vos envies, de vous offrir le
                 conseil le plus adéquat, notre collaboration débute toujours par
                 une rencontre. Nous explorons votre projet avant de vous
                 remettre un devis détaillé dans le respect de vos critères et de
-                votre budget.
+                votre budget.`}
               </p>
-              <p className="">
-                Nous accordons une importance toute particulière au travail
-                soigné et de qualité, au respect de normes techniques.
+              <p>
+                {`Nous accordons une importance toute particulière au travail
+                soigné et de qualité, au respect de normes techniques.`}
               </p>
-              <p className="">
-                Vous souhaitez obtenir de plus amples informations quant au
+              <p>
+                {`Vous souhaitez obtenir de plus amples informations quant au
                 sujet de nos services de plombier-chauffagiste ? N’hésitez pas à
                 prendre contact avec nous. Nous sommes à votre écoute et
                 prendrons le temps nécessaire afin de faire disparaître toutes
-                vos questions.
+                vos questions.`}
               </p>
               <div className="flex items-center justify-center pt-10">
                 <button className="px-4 py-2 bg-orange-500 font-medium w-44 text-white rounded-full hover:text-gray-500 text-lg">
