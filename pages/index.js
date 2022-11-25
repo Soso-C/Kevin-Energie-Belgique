@@ -22,11 +22,10 @@ export default function Home() {
       <header>
         <TopBarHeader />
         <Navbar />
-        {/* <Banner /> */}
         <Slider />
       </header>
       <main>
-        <DevisGratuit />
+        {/* <DevisGratuit /> */}
         <Presentation />
         <SectionServices />
       </main>

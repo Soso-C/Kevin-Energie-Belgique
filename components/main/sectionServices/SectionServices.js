@@ -42,17 +42,17 @@ export default function SectionServices() {
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
-            icon={<BsTools className="h-8 w-8" />}
-            href="/"
-            title="Entretien / Dépanage"
-            img={"/entretiens_depannage.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
-          />
-          <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/"
             title="Pompe à chaleur"
             img={"/pump.png"}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+          />
+          <SectionItem
+            icon={<BsTools className="h-8 w-8" />}
+            href="/"
+            title="Entretien / Dépanage"
+            img={"/entretiens_depannage.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
         </div>
