@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";

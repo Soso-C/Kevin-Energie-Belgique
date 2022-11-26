@@ -19,7 +19,6 @@ export default function DropdownBtn() {
   return (
     <div className="w-full flex justify-center border-t md:border-none p-3 md:p-0 bg-white relative">
       <button
-        ref={dropRef}
         className="text-md font-medium text-gray-500 hover:text-orange-500 flex items-center cursor-pointer"
         onClick={() => setOpen((curr) => !curr)}
       >
@@ -27,7 +26,7 @@ export default function DropdownBtn() {
         <MdOutlineArrowDropDown className="h-4 w-4" />
       </button>
 
-      <div className={`${open ? "block" : "hidden "}`}>
+      <div className={`${open ? "block" : "hidden "}`} ref={dropRef}>
         <div
           className="origin-top-right absolute left-1/2 -translate-x-1/2 z-10 mt-8 md:mt-11 w-56 md:w-44 rounded-md border border-gray-100 bg-white shadow-lg"
           role="menu"

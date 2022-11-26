@@ -2,27 +2,27 @@
 
 export const imgSlider = [
   {
-    image: "/Slide_Pellet.jpg",
+    image: "/pellet.jpg",
     id: 0,
   },
   {
-    image: "/pump.png",
+    image: "/pompe_a_chaleur.png",
     id: 1,
   },
   {
-    image: "/Chaudiere.jpg",
+    image: "/chaudiere.jpg",
     id: 2,
   },
   {
-    image: "/slide_sanitaire.jpg",
+    image: "/sanitaire.jpg",
     id: 3,
   },
   {
-    image: "/slide_ventil.jpg",
+    image: "/ventilation.jpg",
     id: 4,
   },
   {
-    image: "/entretiens_depannage.jpg",
+    image: "/entretien.jpg",
     id: 5,
   },
 ];

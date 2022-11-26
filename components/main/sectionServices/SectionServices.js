@@ -17,42 +17,42 @@ export default function SectionServices() {
             icon={<FaHome className="h-8 w-8" />}
             href="/"
             title="Sanitaire"
-            img={"/slide_sanitaire.jpg"}
+            img={"/sanitaire.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href={"/"}
             title="Chauffage"
-            img={"/Chaudiere.jpg"}
+            img={"/chaudiere.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/"
             title="Pellets"
-            img={"/Slide_Pellet.jpg"}
+            img={"/pellet.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/"
             title="Pompe à chaleur"
-            img={"/pump.png"}
+            img={"/pompe_a_chaleur.png"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<TbWindmill className="h-8 w-8" />}
             href="/"
             title="Ventilation"
-            img={"/slide_ventil.jpg"}
+            img={"/ventilation.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<BsTools className="h-8 w-8" />}
             href="/"
             title="Entretien / Dépanage"
-            img={"/entretiens_depannage.jpg"}
+            img={"/entretien.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
         </div>
