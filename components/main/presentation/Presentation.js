@@ -11,7 +11,7 @@ export default function Presentation() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 lg:gap-16">
-          <div className=" flex-col justify-center hidden lg:flex">
+          <div className="flex-col justify-center hidden lg:flex">
             <div className="relative h-60 overflow-hidden lg:h-80">
               <Image
                 alt="Logo KD Energie"

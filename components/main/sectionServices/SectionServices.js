@@ -15,42 +15,42 @@ export default function SectionServices() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full justify-center gap-6 px-4 mt-16">
           <SectionItem
             icon={<FaHome className="h-8 w-8" />}
-            href="/"
+            href="/sanitaire"
             title="Sanitaire"
             img={"/sanitaire.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
-            href={"/"}
+            href={"/chauffage"}
             title="Chauffage"
             img={"/chaudiere.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
-            href="/"
+            href="/pellet"
             title="Pellets"
             img={"/pellet.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
-            href="/"
+            href="/pompe-a-chaleur"
             title="Pompe à chaleur"
             img={"/pompe_a_chaleur.png"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<TbWindmill className="h-8 w-8" />}
-            href="/"
+            href="/ventilation"
             title="Ventilation"
             img={"/ventilation.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
           />
           <SectionItem
             icon={<BsTools className="h-8 w-8" />}
-            href="/"
+            href="/entretien-depanage"
             title="Entretien / Dépanage"
             img={"/entretien.jpg"}
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"

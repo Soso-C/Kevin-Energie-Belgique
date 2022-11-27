@@ -6,7 +6,7 @@ import OrangeBtn from "../button/orangeButton/OrangeBtn";
 export default function Footer() {
   return (
     <footer aria-label="Site Footer" className="bg-[#464646]">
-      <div className="mx-auto max-w-[1400px] px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:py-8">
+      <div className="mx-auto max-w-[1400px] px-4 pt-16 pb-6 lg:py-8">
         <div className="grid grid-cols-1 sm:text-center md:grid-cols-2 lg:grid-cols-4 text-white gap-8 md:gap-12 justify-items-center md:justify-between">
           <div className="w-full">
             <span className="text-lg font-bold text-orange-500 block w-full text-left">
@@ -79,6 +79,7 @@ export default function Footer() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               className="w-full h-full"
+              title="google map kd-energie"
             ></iframe>
           </div>
           <div className="w-full lg:w-fit">

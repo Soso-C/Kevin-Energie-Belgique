@@ -48,7 +48,7 @@ const dropDownData = [
   { id: 3, title: "Pompe à chaleur", href: "/pompe-a-chaleur" },
   { id: 4, title: "Sanitaire", href: "/sanitaire" },
   { id: 5, title: "Pellets", href: "/pellet" },
-  { id: 6, title: "Entretient et dépanage", href: "/entretien-depanage" },
+  { id: 6, title: "Entretien et dépannage", href: "/entretien-depannage" },
 ];
 
 const DropDownItem = ({ href, title }) => {

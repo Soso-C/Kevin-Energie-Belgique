@@ -21,11 +21,11 @@ export default function EntretienDepanage() {
         <header>
           <TopBarHeader />
           <Navbar />
-          <Banner imgBanner={imgBanner} title="Entretient et dépanage" />
+          <Banner imgBanner={imgBanner} title="Entretien et dépannage" />
         </header>
         <main>
           <MainPageService
-            title={"Entretient et dépanage"}
+            title={"Entretien et dépannage"}
             imgMain={"/entretien2.png"}
           />
         </main>
