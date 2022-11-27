@@ -1,3 +1,4 @@
+"use client";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import TopBarHeader from "../header/topbarheader/TopBarHeader";
@@ -6,11 +7,11 @@ import Banner from "./banner/Banner";
 import Footer from "../footer/Footer";
 import MainPageService from "./mainPageService/MainPageService";
 
-export default function ServicePageModulable({ imgBanner }) {
+export default function ServicePageModulable({ imgBanner, title = "" }) {
   const router = useRouter();
-  const routerPathname = router.pathname.replace("/", "");
-  const title =
-    routerPathname.charAt(0).toUpperCase() + routerPathname.slice(1);
+  // const routerPathname = router.pathname.replace("/", "");
+  // const title =
+  //   routerPathname.charAt(0).toUpperCase() + routerPathname.slice(1);
   return (
     <div className="bg-gray-50">
       <Head>

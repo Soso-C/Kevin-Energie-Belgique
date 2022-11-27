@@ -9,10 +9,10 @@ import SectionItem from "./SectionItem";
 
 export default function SectionServices() {
   return (
-    <section className="bg-white py-10 shadow">
+    <section className="bg-white py-10 lg:py-16 shadow">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-center text-2xl py-6 font-bold">Nos Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full justify-center gap-6 px-4 mt-8 ">
+        <h2 className="text-center text-2xl font-bold">Nos Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full justify-center gap-6 px-4 mt-16">
           <SectionItem
             icon={<FaHome className="h-8 w-8" />}
             href="/"

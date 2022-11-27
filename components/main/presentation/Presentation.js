@@ -5,7 +5,7 @@ import OrangeBtn from "../../button/orangeButton/OrangeBtn";
 export default function Presentation() {
   return (
     <section className="bg-slate-50/80">
-      <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 py-10 lg:py-16 sm:px-6 lg:px-8">
         <div className="">
           <h2 className="text-3xl font-bold text-center">KD Energie</h2>
         </div>

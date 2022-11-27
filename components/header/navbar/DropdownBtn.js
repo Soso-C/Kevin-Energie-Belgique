@@ -28,7 +28,7 @@ export default function DropdownBtn() {
 
       <div className={`${open ? "block" : "hidden "}`} ref={dropRef}>
         <div
-          className="origin-top-right absolute left-1/2 -translate-x-1/2 z-10 mt-8 md:mt-11 w-56 md:w-44 rounded-md border border-gray-100 bg-white shadow-lg"
+          className="origin-top-right absolute left-1/2 -translate-x-1/2 z-10 mt-8 md:mt-11 w-56 rounded-md border border-gray-100 bg-white shadow-lg"
           role="menu"
         >
           <div className="p-2">
@@ -47,7 +47,8 @@ const dropDownData = [
   { id: 2, title: "Ventilation", href: "/ventilation" },
   { id: 3, title: "Pompe à chaleur", href: "/pompe-a-chaleur" },
   { id: 4, title: "Sanitaire", href: "/sanitaire" },
-  { id: 5, title: "Pellets", href: "/pellets" },
+  { id: 5, title: "Pellets", href: "/pellet" },
+  { id: 6, title: "Entretient et dépanage", href: "/entretien-depanage" },
 ];
 
 const DropDownItem = ({ href, title }) => {
