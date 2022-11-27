@@ -12,7 +12,7 @@ export default function Ventilation() {
       <header>
         <TopBarHeader />
         <Navbar />
-        <Banner imgBanner={imgBanner} />
+        <Banner imgBanner={imgBanner} title={"Ventilation"} />
       </header>
       <main>
         <MainPageService title={"Ventilation"} imgMain={"/ventilation2.jpg"} />

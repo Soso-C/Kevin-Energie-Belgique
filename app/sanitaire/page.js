@@ -12,7 +12,7 @@ export default function Sanitaire() {
       <header>
         <TopBarHeader />
         <Navbar />
-        <Banner imgBanner={imgBanner} />
+        <Banner imgBanner={imgBanner} title={"Sanitaire"} />
       </header>
       <main>
         <MainPageService title={"Sanitaire"} imgMain={"/sanitaire2.png"} />

@@ -2,13 +2,20 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../logo/Logo";
 import OrangeBtn from "../button/orangeButton/OrangeBtn";
+import {
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiFillFacebook,
+  AiOutlineHome,
+} from "react-icons/ai";
+import { IoBusinessOutline } from "react-icons/io5";
 
 export default function Footer() {
   return (
     <footer aria-label="Site Footer" className="bg-[#464646]">
       <div className="mx-auto max-w-[1400px] px-4 pt-16 pb-6 lg:py-8">
         <div className="grid grid-cols-1 sm:text-center md:grid-cols-2 lg:grid-cols-4 text-white gap-8 md:gap-12 justify-items-center md:justify-between">
-          <div className="w-full">
+          <div className="w-full h-full">
             <span className="text-lg font-bold text-orange-500 block w-full text-left">
               A propos
             </span>
@@ -34,8 +41,14 @@ export default function Footer() {
                 </li>
 
                 <li>
-                  <Link className="hover:text-orange-500" href="/ventilation">
+                  <Link className="hover:text-orange-500" href="/sanitaire">
                     Sanitaire
+                  </Link>
+                </li>
+
+                <li>
+                  <Link className="hover:text-orange-500" href="/ventilation">
+                    Ventilation
                   </Link>
                 </li>
 
@@ -44,29 +57,20 @@ export default function Footer() {
                     className="hover:text-orange-500"
                     href="/pompe-a-chaleur"
                   >
-                    Ventilation
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="hover:text-orange-500" href="/pellet">
                     Pompe à Chaleur
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="hover:text-orange-500"
-                    href="/entretien-depanage"
-                  >
+                  <Link className="hover:text-orange-500" href="/pellet">
                     Pellets
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="hover:text-orange-500"
-                    href="/entretien-depanage"
+                    href="/entretien-depannage"
                   >
-                    Entretiens-Dépannage
+                    Entretien et Dépannage
                   </Link>
                 </li>
               </ul>
@@ -89,23 +93,44 @@ export default function Footer() {
             <ul className="mt-8 space-y-2 text-sm font-medium text-left md:text-center ">
               <li>
                 <Link
-                  className="hover:text-orange-500"
+                  className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
                   href="mailto:contact@kd-energie.be"
                 >
-                  <span className="">contact@kd-energie.be</span>
+                  <AiOutlineMail className="w-4 h-4" />
+                  <span>contact@kd-energie.be</span>
                 </Link>
               </li>
 
               <li>
-                <Link className="hover:text-orange-500" href="tel:0468381079">
-                  <span className="">0468381079</span>
+                <Link
+                  className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
+                  href="tel:0468381079"
+                >
+                  <AiOutlinePhone className="w-4 h-4" />
+                  <span>0468381079</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
+                  href="/"
+                >
+                  <AiFillFacebook className="w-4 h-4" />
+                  <span>Facebook</span>
                 </Link>
               </li>
 
-              <li className="pb-4">
-                <address className="not-italic">
+              <li>
+                <span className="flex items-center md:justify-center gap-2 justify-start">
+                  <AiOutlineHome className="w-4 h-4" />
                   Rue Saint-Roch 42, 4920 Aywaille, Belgique
-                </address>
+                </span>
+              </li>
+              <li className="pb-4">
+                <span className="flex items-center md:justify-center gap-2 justify-start">
+                  <IoBusinessOutline className="h-4 w-4" />
+                  BE0790.667.586
+                </span>
               </li>
 
               <OrangeBtn>Devis gratuit</OrangeBtn>
