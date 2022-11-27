@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Banner({ imgBanner }) {
+export default function Banner({ imgBanner, title }) {
   return (
     <div className="relative h-96 lg:h-[350px] w-full mt-[70px] md:mt-[120px]">
       <Image

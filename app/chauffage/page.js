@@ -1,4 +1,3 @@
-import "/styles/globals.css";
 import React from "react";
 import ServicePageModulable from "../../components/servicesPageModulable/ServicePageModulable";
 import imgBanner from "/public/chaudiere.jpg";
@@ -11,23 +10,16 @@ import Footer from "../../components/footer/Footer";
 
 export default function Chauffage() {
   return (
-    <>
-      <div className="bg-gray-50">
-        <Head>
-          <title>KD Energie | Chauffage</title>
-          <meta name="description" content="" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <header>
-          <TopBarHeader />
-          <Navbar />
-          <Banner imgBanner={imgBanner} title="Chauffage" />
-        </header>
-        <main>
-          <MainPageService title={"Chauffage"} imgMain={"/pellet2.png"} />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="bg-gray-50">
+      <header>
+        <TopBarHeader />
+        <Navbar />
+        <Banner imgBanner={imgBanner} title="Chauffage" />
+      </header>
+      <main>
+        <MainPageService title={"Chauffage"} imgMain={"/pellet2.png"} />
+      </main>
+      <Footer />
+    </div>
   );
 }
