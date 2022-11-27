@@ -3,7 +3,7 @@ import "../styles/globals.css";
 const RootLayout = ({ children }) => (
   <html lang="fr">
     <head>
-      <title>KD Energie</title>
+      <title>KD Energie | Accueil</title>
       <meta
         name="description"
         content="KD Énergie située à Aywaille et ses alentours est une jeune
