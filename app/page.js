@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import Navbar from "../components/header/navbar/Navbar";
 import TopBarHeader from "../components/header/topbarheader/TopBarHeader";
 import Slider from "../components/slider/Slider";

@@ -1,12 +1,10 @@
 import React from "react";
-import ServicePageModulable from "../../components/servicesPageModulable/ServicePageModulable";
-import imgBanner from "/public/sanitaire.jpg";
-import Head from "next/head";
-import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
-import Navbar from "../../components/header/navbar/Navbar";
-import Banner from "../../components/servicesPageModulable/banner/Banner";
-import MainPageService from "../../components/servicesPageModulable/mainPageService/MainPageService";
 import Footer from "../../components/footer/Footer";
+import Banner from "../../components/header/banner/Banner";
+import Navbar from "../../components/header/navbar/Navbar";
+import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
+import MainPageService from "../../components/servicesPageModulable/mainPageService/MainPageService";
+import imgBanner from "/public/sanitaire.jpg";
 
 export default function Sanitaire() {
   return (
