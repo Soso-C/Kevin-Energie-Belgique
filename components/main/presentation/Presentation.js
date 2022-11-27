@@ -15,7 +15,7 @@ export default function Presentation() {
             <div className="relative h-60 overflow-hidden lg:h-80">
               <Image
                 alt="Logo KD Energie"
-                src="/flamme.png"
+                src="/logo-kd-energie/logo_flamme.png"
                 fill
                 objectFit="contain"
               />
