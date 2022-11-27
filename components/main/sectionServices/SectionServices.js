@@ -18,42 +18,42 @@ export default function SectionServices() {
             href="/sanitaire"
             title="Sanitaire"
             img={"/sanitaire.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Installation et rénovation de boiler, salle de bain, évier, robinetterie, WC, ..."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href={"/chauffage"}
             title="Chauffage"
             img={"/chaudiere.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Installation et rénovation de chaudières (mazout, gaz), radiateur, chauffage sol, ..."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/pellet"
             title="Pellets"
             img={"/pellet.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Installation et rénovation de poêle à pellets, tubage de cheminée, ..."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/pompe-a-chaleur"
             title="Pompe à chaleur"
             img={"/pompe_a_chaleur.png"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Installation et rénovation de pompe à chaleur (air-eau, split, monobloc), ..."
           />
           <SectionItem
             icon={<TbWindmill className="h-8 w-8" />}
             href="/ventilation"
             title="Ventilation"
             img={"/ventilation.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Installation et rénovation de ventilation à simple ou double flux."
           />
           <SectionItem
             icon={<BsTools className="h-8 w-8" />}
             href="/entretien-depanage"
             title="Entretien / Dépanage"
             img={"/entretien.jpg"}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, commodi!"
+            text="Entretien et dépannage de chaudière, sanitaire, ventilation, poêle, ramonage, ..."
           />
         </div>
       </div>

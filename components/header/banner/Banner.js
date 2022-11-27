@@ -11,7 +11,7 @@ export default function Banner({ imgBanner, title }) {
         fill
         className="h-full w-full object-cover"
       />
-      <div className="absolute z-10 -translate-x-1/2 left-1/2 top-1/2">
+      <div className="absolute z-[1] -translate-x-1/2 left-1/2 top-1/2">
         <h2 className="font-extrabold text-4xl uppercase text-white">
           {title}
         </h2>

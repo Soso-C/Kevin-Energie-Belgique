@@ -3,8 +3,8 @@ import imgBanner from "/public/pompe_a_chaleur.png";
 import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
 import Navbar from "../../components/header/navbar/Navbar";
 import Banner from "../../components/header/banner/Banner";
-import MainPageService from "../../components/servicesPageModulable/mainPageService/MainPageService";
 import Footer from "../../components/footer/Footer";
+import MainPageService from "../../components/main/mainPageService/MainPageService";
 
 export default function PompeChaleur() {
   return (

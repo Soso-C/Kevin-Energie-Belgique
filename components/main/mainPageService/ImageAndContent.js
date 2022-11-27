@@ -9,7 +9,6 @@ export default function ImageAndContent({ imgContent, content, title }) {
           src={imgContent}
           alt={`photo de ${title}`}
           layout="fill"
-          // objectFit="cover"
           className="w-full h-full object-cover"
         />
       </div>

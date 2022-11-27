@@ -3,7 +3,7 @@ import Footer from "../../components/footer/Footer";
 import Banner from "../../components/header/banner/Banner";
 import Navbar from "../../components/header/navbar/Navbar";
 import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
-import MainPageService from "../../components/servicesPageModulable/mainPageService/MainPageService";
+import MainPageService from "../../components/main/mainPageService/MainPageService";
 import imgBanner from "/public/sanitaire.jpg";
 
 export default function Sanitaire() {
