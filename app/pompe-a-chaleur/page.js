@@ -1,13 +1,13 @@
-import "../styles/globals.css";
+import "/styles/globals.css";
 import React from "react";
-import ServicePageModulable from "../components/servicesPageModulable/ServicePageModulable";
-import imgBanner from "../public/pompe_a_chaleur.png";
+import ServicePageModulable from "../../components/servicesPageModulable/ServicePageModulable";
+import imgBanner from "/public/pompe_a_chaleur.png";
 import Head from "next/head";
-import TopBarHeader from "../components/header/topbarheader/TopBarHeader";
-import Navbar from "../components/header/navbar/Navbar";
-import Banner from "../components/servicesPageModulable/banner/Banner";
-import MainPageService from "../components/servicesPageModulable/mainPageService/MainPageService";
-import Footer from "../components/footer/Footer";
+import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
+import Navbar from "../../components/header/navbar/Navbar";
+import Banner from "../../components/servicesPageModulable/banner/Banner";
+import MainPageService from "../../components/servicesPageModulable/mainPageService/MainPageService";
+import Footer from "../../components/footer/Footer";
 
 export default function PompeChaleur() {
   return (
