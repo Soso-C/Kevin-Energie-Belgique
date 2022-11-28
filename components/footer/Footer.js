@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import FooterLinkItem from "./FooterLinkItem";
 import IframeMapFooter from "./IframeMapFooter";
