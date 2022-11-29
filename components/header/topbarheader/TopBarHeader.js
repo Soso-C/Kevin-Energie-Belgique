@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect } from "react";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -7,11 +8,11 @@ export default function TopBarHeader() {
   return (
     <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#464646] fixed top-0 w-full z-10">
       <div className="flex w-full max-w-[1400px] justify-between items-center mx-auto md:px-4 font-bold text-white">
-        <h1 className="text-md ">
+        <div className="text-md">
           <span className="">Chauffage</span> {" - "}
           <span className="">Sanitaire</span> {" - "}
           <span className="">HVAC</span>
-        </h1>
+        </div>
         <ul className="flex space-x-4">
           <RightItem
             href={"mailto:contact@kd-energie.be"}
@@ -32,10 +33,13 @@ export default function TopBarHeader() {
 const RightItem = ({ href, icon, text }) => {
   return (
     <li>
-      <a href={href} className="flex items-center gap-1 hover:text-orange-500">
+      <Link
+        href={href}
+        className="flex items-center gap-1 hover:text-orange-500"
+      >
         {icon}
         <span>{text}</span>
-      </a>
+      </Link>
     </li>
   );
 };

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Header from "./Header";
 
 const RootLayout = ({ children }) => (
   <html lang="fr">
@@ -15,7 +16,10 @@ const RootLayout = ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </head>
-    <body>{children}</body>
+    <body>
+      {/* <Header /> */}
+      {children}
+    </body>
   </html>
 );
 
