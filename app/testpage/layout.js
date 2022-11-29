@@ -1,5 +1,5 @@
 import "/styles/globals.css";
 
-const RootLayout = ({ children }) => <>{children}</>;
+const TestLayout = ({ children }) => <>{children}</>;
 
-export default RootLayout;
+export default TestLayout;

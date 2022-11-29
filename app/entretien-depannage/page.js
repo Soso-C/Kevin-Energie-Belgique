@@ -6,7 +6,7 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/entretien.jpg";
 import imgMain from "/public/entretien2.png";
-export default function Home() {
+export default function EntretienPage() {
   return (
     <div className="bg-gray-50">
       <header>

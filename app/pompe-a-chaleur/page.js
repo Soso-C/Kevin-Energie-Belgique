@@ -17,41 +17,37 @@ export default function PompeChaleur() {
         <Banner imgBanner={imgBanner} title={"Pompe à chaleur"} />
       </header>
       <main>
-        <MainPageService title={"Pompe à chaleur"}>
+        <MainPageService title={"Installation de pompe à chaleur"}>
           <ImageAndContentCustom title={"Pompe à chaleur"} imgContent={imgMain}>
             <p>
-              {`Nos habitations sont de mieux en mieux isolées mais cela implique
-              une aération réduite, ce qui peut entraîner des problèmes
-              d'humidité, moisissure, odeurs, vapeurs de cuisson, poussière ou
-              encore rejet de CO2, les particules présentes autour de nous sont
-              bien plus nombreuses qu’on ne pourrait le penser, surtout si votre
-              maison est mal aérée. Donc disposer d’un air sain de manière
-              constante au sein de votre habitation est primordial pour votre
-              qualité de vie.`}
+              Les pompes à chaleur font partie des dispositifs de chauffage les
+              plus innovants et performants existant sur le marché en matière
+              d’énergie verte.
             </p>
             <p>
-              {`C'est pourquoi KD Energie propose ces services d'installation de
-              système de ventilation.`}
+              Plus économiques que les chaudières traditionnelles, les pompes à
+              chaleur offrent une chaleur naturelle, agréable et confortable,
+              des rendements supérieurs, réduisent les émissions de CO2, ont de
+              faibles coûts d’installation et de consommation.
             </p>
             <p>
-              Selon le type de votre habitation, nous vous proposons un système
-              simple flux ou double flux.
+              La pompe à chaleur utilise l'énergie présentes dans l'air (énergie
+              aérothermique), dans l'eau (énergie aquathermique) ou dans le sol
+              (énergie géothermie) selon le type de pompe pour chauffer votre
+              maison et votre eau.
             </p>
-            <p className="font-bold">Système ventilation simple flux :</p>
             <p>
-              {`Conviens mieux pour les rénovations. L'air frais entre dans la
-              maison par des grille placées dans les pièces de vie, et l'air
-              vicié ressort automatiquement par cuisine, salle de bain et WC
-              (pièces dites de service)`}
+              En plus de chauffer votre maison, ce système peut également vous
+              aider à rafraichir votre maison en temps de grande chaleur ! En
+              effet, celle-ci peut se transformer en climatiseur afin de
+              diminuer la température de vos pièces en été appelé le « natural
+              cooling ».
             </p>
-            <p className="font-bold">Système ventilation double flux:</p>
             <p>
-              Convient mieux pour les habitations individuelles. L’air de dehors
-              entre dans la maison et est réchauffé par l’air vicié qui ressort.
-              L’air qui rentre est donc réchauffé, et l’air sortant ayant
-              transféré sa chaleur ressort frais. Ce système minimise les pertes
-              d’énergie
+              Pour tout renseignement ou demande de devis n'hésitez pas à nous
+              contactez.
             </p>
+            <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

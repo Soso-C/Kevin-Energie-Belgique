@@ -7,7 +7,7 @@ import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/ventilation.jpg";
 import imgMain from "/public/ventilation2.jpg";
 
-export default function Home() {
+export default function VentilationPage() {
   return (
     <div className="bg-gray-50">
       <header>

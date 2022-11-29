@@ -5,7 +5,8 @@ import Banner from "/components/header/banner/Banner";
 import MainPageService from "/components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "/components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../../components/footer/Footer";
-export default function Home() {
+
+export default function ChauffagePage() {
   return (
     <div className="bg-gray-50">
       <header>

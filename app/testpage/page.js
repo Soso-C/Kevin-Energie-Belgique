@@ -1,3 +1,4 @@
+// "use client";
 import Navbar from "../../components/header/navbar/Navbar";
 import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
 import Banner from "/components/header/banner/Banner";
@@ -6,8 +7,13 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/pellet.jpg";
 import imgMain from "/public/pellet2.png";
+// import { useEffect } from "react";
 
-export default function Home() {
+export default function TestPage() {
+  // useEffect(() => {
+  //   document.title = "KD Energie | Test Page";
+  //   document.querySelector('meta[name="description"]').content = "Test page";
+  // }, []);
   return (
     <div className="bg-gray-50">
       <header>

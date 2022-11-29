@@ -6,7 +6,8 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/sanitaire.jpg";
 import imgMain from "/public/sanitaire2.png";
-export default function Home() {
+
+export default function SanitairePage() {
   return (
     <div className="bg-gray-50">
       <header>

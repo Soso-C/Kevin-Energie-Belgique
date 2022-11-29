@@ -6,7 +6,7 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/pellet.jpg";
 import imgMain from "/public/pellet2.png";
-export default function Home() {
+export default function PelletPage() {
   return (
     <div className="bg-gray-50">
       <header>
