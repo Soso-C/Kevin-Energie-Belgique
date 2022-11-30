@@ -45,7 +45,9 @@ export default function FooterContact() {
           </span>
         </li>
 
-        <OrangeBtn>Devis gratuit</OrangeBtn>
+        <OrangeBtn>
+          <Link href={"/contact"}>Devis gratuit</Link>
+        </OrangeBtn>
       </ul>
     </div>
   );

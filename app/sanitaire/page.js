@@ -6,6 +6,7 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/sanitaire.jpg";
 import imgMain from "/public/sanitaire2.png";
+import Link from "next/link";
 
 export default function SanitairePage() {
   return (
@@ -26,14 +27,20 @@ export default function SanitairePage() {
               L'entreprise KD Energie se fera un plaisir de vous accompagnez et
               vous orientez pour vos projets de :
             </p>
-            <p className="font-bold">- Travaux de plomberie</p>
-            <p className="font-bold">- Installation de boiler et chauffe-eau</p>
-            <p className="font-bold">- Installation de salle de bain</p>
-            <p className="font-bold">- Système d'adoucissement d'eau</p>
-            <p className="">
-              Pour tout renseignement ou demande de devis n'hésitez pas à nous
-              contactez.
+            <p>- Travaux de plomberie</p>
+            <p>- Installation de boiler et chauffe-eau</p>
+            <p>- Installation de salle de bain</p>
+            <p>- Système d'adoucissement d'eau</p>
+            <p>
+              Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
+              <Link
+                href={"contact"}
+                className="text-orange-500 underline font-medium"
+              >
+                nous contacter.
+              </Link>
             </p>
+            <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

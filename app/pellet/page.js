@@ -6,6 +6,8 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/pellet.jpg";
 import imgMain from "/public/pellet2.png";
+import Link from "next/link";
+
 export default function PelletPage() {
   return (
     <div className="bg-gray-50">
@@ -15,41 +17,40 @@ export default function PelletPage() {
         <Banner imgBanner={imgBanner} title={"Pellets"} />
       </header>
       <main>
-        <MainPageService title={"Chaudière à pellets"}>
+        <MainPageService title={"Poêle à pellets"}>
           <ImageAndContentCustom title={"Pellets"} imgContent={imgMain}>
             <p>
-              {`Nos habitations sont de mieux en mieux isolées mais cela implique
-              une aération réduite, ce qui peut entraîner des problèmes
-              d'humidité, moisissure, odeurs, vapeurs de cuisson, poussière ou
-              encore rejet de CO2, les particules présentes autour de nous sont
-              bien plus nombreuses qu’on ne pourrait le penser, surtout si votre
-              maison est mal aérée. Donc disposer d’un air sain de manière
-              constante au sein de votre habitation est primordial pour votre
-              qualité de vie.`}
+              Vous n’êtes pas complètement satisfaits de la température qui
+              règne dans votre pièce à vivre ? Vous souhaitez une solution plus
+              économique mais aussi plus écologique pour chauffer votre
+              habitation ? Vous aimeriez une solution facile et élégante pour
+              disposer d’une source de chaleur supplémentaire ?
             </p>
             <p>
-              C'est pourquoi <strong>KD Energie</strong> propose ses services
-              d'installation de système de ventilation
+              Notre entreprise est la pour y remédiez. Au-delà de ses aspects
+              écologiques et économiques, ce type de chauffage apporte une
+              ambiance chaleureuse et conviviale à votre maison.
             </p>
             <p>
-              Selon le type de votre habitation, nous vous proposons un système
-              simple flux ou double flux.
+              Située à Aywaille, KD Energie vous propose ce service
+              d’installation de poêle à pellets dans la province de Liège.
             </p>
-            <p className="font-bold">Système ventilation simple flux :</p>
             <p>
-              {`Conviens mieux pour les rénovations. L'air frais entre dans la
-              maison par des grille placées dans les pièces de vie, et l'air
-              vicié ressort automatiquement par cuisine, salle de bain et WC
-              (pièces dites de service)`}
+              Vous êtes intéressés par ce service et voulez en savoir plus quant
+              à celui-ci ? N’hésitez pas à nous contacter. Nous mettons un point
+              d’honneur à répondre très rapidement à la moindre de vos questions
+              et ce, en étant le plus précis possible.
             </p>
-            <p className="font-bold">Système ventilation double flux:</p>
             <p>
-              Convient mieux pour les habitations individuelles. L’air de dehors
-              entre dans la maison et est réchauffé par l’air vicié qui ressort.
-              L’air qui rentre est donc réchauffé, et l’air sortant ayant
-              transféré sa chaleur ressort frais. Ce système minimise les pertes
-              d’énergie
+              Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
+              <Link
+                href={"contact"}
+                className="text-orange-500 underline font-medium"
+              >
+                nous contacter.
+              </Link>
             </p>
+            <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

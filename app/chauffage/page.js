@@ -5,6 +5,7 @@ import Banner from "/components/header/banner/Banner";
 import MainPageService from "/components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "/components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../../components/footer/Footer";
+import Link from "next/link";
 
 export default function ChauffagePage() {
   return (
@@ -28,16 +29,26 @@ export default function ChauffagePage() {
               nous assurons les installations entretiens et réparations de :
             </p>
             <p>
-              L'entreprise <strong>KD Energie</strong> se fera un plaisir de
-              vous accompagnez et vous orientez pour vos projets de :
+              L'entreprise KD Energie se fera un plaisir de vous accompagnez et
+              vous orientez pour vos projets de :
             </p>
-            <p className="font-bold">- Chaudière condensation (mazout, gaz) </p>
-            <p className="font-bold">- Rénovation et l'entretiens chaudières</p>
-            <p className="font-bold">- Dépannage chaudière</p>
-            <p className="font-bold">- Radiateur traditionnels et design</p>
-            <p className="font-bold">- Chauffage par le sol</p>
-            <p className="font-bold">- Chauffe-eau et boiler</p>
-            <p className="font-bold">- Tubage / Ramonage de cheminée</p>
+            <p>- Dépannage chaudière</p>
+            <p>- Rénovation et l'entretiens chaudières</p>
+            <p>- Radiateur traditionnels et design</p>
+            <p>- Chauffage par le sol</p>
+            <p>- Chauffe-eau et boiler</p>
+            <p>- Tubage / Ramonage de cheminée</p>
+            <p>- Chaudière condensation (mazout, gaz) </p>
+            <p>
+              Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
+              <Link
+                href={"contact"}
+                className="text-orange-500 underline font-medium"
+              >
+                nous contacter.
+              </Link>
+            </p>
+            <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

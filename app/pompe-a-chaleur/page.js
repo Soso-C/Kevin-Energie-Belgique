@@ -7,6 +7,7 @@ import MainPageService from "../../components/main/mainPageService/MainPageServi
 import ImageAndContentCustom from "../../components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import imgBanner from "/public/pompe_a_chaleur.png";
 import imgMain from "/public/pompe_a_chaleur2.png";
+import Link from "next/link";
 
 export default function PompeChaleur() {
   return (
@@ -44,8 +45,13 @@ export default function PompeChaleur() {
               cooling ».
             </p>
             <p>
-              Pour tout renseignement ou demande de devis n'hésitez pas à nous
-              contactez.
+              Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
+              <Link
+                href={"contact"}
+                className="text-orange-500 underline font-medium"
+              >
+                nous contacter.
+              </Link>
             </p>
             <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>

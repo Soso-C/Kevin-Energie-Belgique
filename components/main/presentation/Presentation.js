@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import OrangeBtn from "../../button/orangeButton/OrangeBtn";
 
@@ -51,7 +52,9 @@ export default function Presentation() {
                 vos questions.`}
               </p>
               <div className="flex items-center justify-center pt-10">
-                <OrangeBtn large={true}>Devis gratuit</OrangeBtn>
+                <OrangeBtn large={true}>
+                  <Link href={"/contact"}>Devis gratuit</Link>
+                </OrangeBtn>
               </div>
             </article>
           </div>
