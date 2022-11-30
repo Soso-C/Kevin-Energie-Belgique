@@ -1,0 +1,42 @@
+export const inptData = [
+  {
+    id: 0,
+    labelName: "name",
+    textLabel: "Nom",
+    inptType: "text",
+    inptId: "name",
+    inptName: "name",
+  },
+  {
+    id: 1,
+    labelName: "prenom",
+    textLabel: "Prénom",
+    inptType: "text",
+    inptId: "prenom",
+    inptName: "prenom",
+  },
+  {
+    id: 2,
+    labelName: "email",
+    textLabel: "Email",
+    inptType: "email",
+    inptId: "email",
+    inptName: "email",
+  },
+  {
+    id: 3,
+    labelName: "titleDevis",
+    textLabel: "Titre du message",
+    inptType: "text",
+    inptId: "titleDevis",
+    inptName: "titleDevis",
+  },
+  {
+    id: 4,
+    labelName: "message",
+    textLabel: "Message",
+    inptId: "message",
+    inptName: "message",
+    textarea: true,
+  },
+];

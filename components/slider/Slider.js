@@ -16,7 +16,7 @@ export default function Slider() {
       })}
       <BtnSlide moveSlide={nextSlide} direction="next" />
       <BtnSlide moveSlide={prevSlide} direction="prev" />
-      <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 flex space-x-1">
+      <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 flex space-x-1 z-[5]">
         {Array.from({ length: imgSlider?.length }).map((item, index) => {
           return (
             <DotSlider

@@ -6,7 +6,7 @@ export default function DotSlider({ slide, index, moveDot }) {
       key={index}
       className={`${
         slide.index === index + 1 ? "bg-black/70" : "bg-transparent"
-      } w-5 h-5 rounded-[50%] border-white border-2 `}
+      } w-5 h-5 rounded-[50%] border-white border-2`}
       onClick={() => moveDot(index + 1)}
     ></button>
   );

@@ -11,7 +11,7 @@ import NavbarItem from "./NavbarItem";
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <div className="bg-white shadow-md fixed top-0 z-10 w-full md:mt-[50px]">
+    <div className="bg-white shadow-sm fixed top-0 z-10 w-full md:mt-[50px]">
       <nav className="max-w-[1400px] mx-auto items-center flex p-4">
         <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
           <Link href={"/"}>

@@ -16,34 +16,21 @@ export default function FooterContact() {
         Contactez nous
       </p>
       <ul className="mt-8 space-y-2 text-sm font-medium text-left md:text-center ">
-        <li>
-          <Link
-            className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
-            href="mailto:contact@kd-energie.be"
-          >
-            <AiOutlineMail className="w-4 h-4" />
-            <span>contact@kd-energie.be</span>
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
-            href="tel:0468381079"
-          >
-            <AiOutlinePhone className="w-4 h-4" />
-            <span>0468381079</span>
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
-            href="/"
-          >
-            <AiFillFacebook className="w-4 h-4" />
-            <span>Facebook</span>
-          </Link>
-        </li>
+        <FooterContactLiLink
+          href={"mailto:contact@kd-energie.be"}
+          icon={<AiOutlineMail className="h-4 w-4" />}
+          title={"contact@kd-energie.be"}
+        />
+        <FooterContactLiLink
+          href={"tel:0468381079"}
+          icon={<AiOutlinePhone className="h-4 w-4" />}
+          title={"0468381079"}
+        />
+        <FooterContactLiLink
+          href={"#facebook"}
+          icon={<AiFillFacebook className="h-4 w-4" />}
+          title={"contact@kd-energie.be"}
+        />
 
         <li>
           <span className="flex items-center md:justify-center gap-2 justify-start">
@@ -63,3 +50,17 @@ export default function FooterContact() {
     </div>
   );
 }
+
+const FooterContactLiLink = ({ href, icon, title }) => {
+  return (
+    <li>
+      <Link
+        className="hover:text-orange-500 flex items-center md:justify-center gap-2 justify-start"
+        href={href}
+      >
+        {icon}
+        <span>{title}</span>
+      </Link>
+    </li>
+  );
+};

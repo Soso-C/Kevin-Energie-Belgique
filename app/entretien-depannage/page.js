@@ -6,49 +6,57 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../../components/footer/Footer";
 import imgBanner from "/public/entretien.jpg";
 import imgMain from "/public/entretien2.png";
+import Link from "next/link";
+
 export default function EntretienPage() {
   return (
     <div className="bg-gray-50">
       <header>
         <TopBarHeader />
         <Navbar />
-        <Banner imgBanner={imgBanner} title={"Entretien / Depannage"} />
+        <Banner imgBanner={imgBanner} title={"Entretien & Dépannage"} />
       </header>
       <main>
-        <MainPageService title={"Entretien et dépannage"}>
+        <MainPageService title={"Entretien d'installation et dépannage"}>
           <ImageAndContentCustom title={"Entretien"} imgContent={imgMain}>
             <p>
-              {`Nos habitations sont de mieux en mieux isolées mais cela implique
-              une aération réduite, ce qui peut entraîner des problèmes
-              d'humidité, moisissure, odeurs, vapeurs de cuisson, poussière ou
-              encore rejet de CO2, les particules présentes autour de nous sont
-              bien plus nombreuses qu’on ne pourrait le penser, surtout si votre
-              maison est mal aérée. Donc disposer d’un air sain de manière
-              constante au sein de votre habitation est primordial pour votre
-              qualité de vie.`}
+              KD Energie vous propose ses services pour l’entretien et le
+              dépannage de vos systèmes.
             </p>
             <p>
-              C'est pourquoi <strong>KD Energie</strong> propose ses services
-              d'installation de système de ventilation
+              Que ce soit pour la plomberie ou le chauffage, les équipements
+              souffrent : eau trop calcaire ou trop acide, résidus de combustion
+              pour les chaudières etc…
             </p>
-            <p>
-              Selon le type de votre habitation, nous vous proposons un système
-              simple flux ou double flux.
+            <p>Nous intervenons de manière programmée à la demande.</p>
+            <p className="font-bold">Dépannage en urgence.</p>
+            <p className="font-bold">
+              Placement de systèmes de traitement de l’eau et adoucisseurs.
             </p>
-            <p className="font-bold">Système ventilation simple flux :</p>
-            <p>
-              {`Conviens mieux pour les rénovations. L'air frais entre dans la
-              maison par des grille placées dans les pièces de vie, et l'air
-              vicié ressort automatiquement par cuisine, salle de bain et WC
-              (pièces dites de service)`}
+            <p className="font-bold">
+              Intervention sur le réseau chauffage et sanitaire.
             </p>
-            <p className="font-bold">Système ventilation double flux:</p>
+            <p className="font-bold">
+              Entretien de chaudière / pompe à chaleur / boiler / chauffe-eau /
+              poêle à pellets / insert / cassette
+            </p>
+            {/* <p className="">Entretien pompe à chaleur</p>
+            <p className="">Entretien boiler / chauffe-eau</p>
+            <p className="">Entretiens Poêle à pellets/insert/cassette</p> */}
+            {/* <p className="">Ramonage conduit chaudière</p> */}
+            <p className="font-bold">
+              Ramonage poêle à pellets / insert / cassette / feu ouvert /
+              conduit chaudière
+            </p>
+            <p className="font-bold">
+              Régulation de la pression du circuit de chauffage des radiateurs
+            </p>
+            <p className="font-bold">Réparation chauffe eau en panne.</p>
             <p>
-              Convient mieux pour les habitations individuelles. L’air de dehors
-              entre dans la maison et est réchauffé par l’air vicié qui ressort.
-              L’air qui rentre est donc réchauffé, et l’air sortant ayant
-              transféré sa chaleur ressort frais. Ce système minimise les pertes
-              d’énergie
+              Alors, n'hésitez plus, contactez-nous pour prendre rendez-vous à
+              votre meilleure convenance. Nous nous adaptons en fonction de
+              votre emploi du temps, et nous vous garantissons une intervention
+              dans les plus brefs délais.
             </p>
           </ImageAndContentCustom>
         </MainPageService>

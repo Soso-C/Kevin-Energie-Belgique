@@ -30,7 +30,10 @@ export default function SanitairePage() {
             <p className="font-bold">- Installation de boiler et chauffe-eau</p>
             <p className="font-bold">- Installation de salle de bain</p>
             <p className="font-bold">- Système d'adoucissement d'eau</p>
-            <p className="font-bold">- Système d'adoucissement d'eau</p>
+            <p className="">
+              Pour tout renseignement ou demande de devis n'hésitez pas à nous
+              contactez.
+            </p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

@@ -2,39 +2,39 @@
 
 export const imgSlider = [
   {
-    id: 0,
+    id: 1,
     image: "/pellet.jpg",
     title: "Pellets",
     href: "/pellet",
   },
   {
-    id: 1,
+    id: 2,
     image: "/pompe_a_chaleur.png",
     title: "Pompe à chaleur",
     href: "/pompe-a-chaleur",
   },
   {
-    id: 2,
+    id: 3,
     image: "/chaudiere.jpg",
     title: "Chauffage",
     href: "/chauffage",
   },
   {
-    id: 3,
+    id: 4,
     image: "/sanitaire.jpg",
     title: "Sanitaire",
     href: "/sanitaire",
   },
   {
-    id: 4,
+    id: 5,
     image: "/ventilation.jpg",
     title: "Ventilation",
     href: "/ventilation",
   },
   {
-    id: 5,
+    id: 6,
     image: "/entretien.jpg",
-    title: "Entretien / Dépannage",
+    title: "Entretien & Dépannage",
     href: "/entretien-depannage",
   },
 ];
