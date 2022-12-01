@@ -29,5 +29,5 @@ export default function useToastify() {
     });
   };
 
-  return { alertMsg, ToastContainer };
+  return { alertMsg, errAlert, ToastContainer };
 }
