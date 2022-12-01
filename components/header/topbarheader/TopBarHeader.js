@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiFillFacebook } from "react-icons/ai";
 
 export default function TopBarHeader() {
   return (
@@ -23,6 +24,11 @@ export default function TopBarHeader() {
             href={"tel:0468381079"}
             icon={<BsFillTelephoneFill className="h-6 w-6" />}
             text={"0468381079"}
+          />
+          <RightItem
+            href={"https://www.facebook.com/profile.php?id=100086004542543"}
+            icon={<AiFillFacebook className="h-6 w-6" />}
+            text={"Facebook"}
           />
         </ul>
       </div>

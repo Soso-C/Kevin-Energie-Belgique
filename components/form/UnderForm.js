@@ -28,9 +28,9 @@ export default function UnderForm() {
       </span>
 
       <ItemLinkForm
-        href={"#facebook"}
+        href={"https://www.facebook.com/profile.php?id=100086004542543"}
         icon={<AiFillFacebook className="h-4 w-4" />}
-        text={"contact@kd-energie.be"}
+        text={"Facebook"}
       />
     </div>
   );

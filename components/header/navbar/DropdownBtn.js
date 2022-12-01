@@ -7,6 +7,7 @@ export default function DropdownBtn() {
   const [open, setOpen] = useState(false);
   const dropRef = useRef(null);
 
+  // UseEffect pour add/removelistener
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropRef.current && !dropRef.current.contains(e.target)) {
@@ -19,6 +20,7 @@ export default function DropdownBtn() {
 
   return (
     <div className="w-full flex justify-center border-t md:border-none p-3 md:p-0 bg-white relative">
+      {/* Button Trigger Dropdown */}
       <button
         className="text-md font-medium text-gray-500 hover:text-orange-500 flex items-center cursor-pointer"
         onClick={() => setOpen((curr) => !curr)}
@@ -27,6 +29,7 @@ export default function DropdownBtn() {
         <MdOutlineArrowDropDown className="h-4 w-4" />
       </button>
 
+      {/* Menu */}
       <div className={`${open ? "block" : "hidden "}`} ref={dropRef}>
         <div
           className="origin-top-right absolute left-1/2 -translate-x-1/2 z-10 mt-8 md:mt-11 w-56 rounded-md border border-gray-100 bg-white shadow-lg"

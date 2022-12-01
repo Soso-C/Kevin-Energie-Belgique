@@ -15,6 +15,7 @@ export default function FooterContact() {
       <p className="text-lg font-bold text-left text-orange-500 block w-full md:text-center ">
         Contactez nous
       </p>
+      {/* List links contact */}
       <ul className="mt-8 space-y-2 text-sm font-medium text-left md:text-center ">
         <FooterContactLiLink
           href={"mailto:contact@kd-energie.be"}
@@ -27,9 +28,9 @@ export default function FooterContact() {
           title={"0468381079"}
         />
         <FooterContactLiLink
-          href={"#facebook"}
+          href={"https://www.facebook.com/profile.php?id=100086004542543"}
           icon={<AiFillFacebook className="h-4 w-4" />}
-          title={"contact@kd-energie.be"}
+          title={"Facebook"}
         />
 
         <li>
