@@ -16,5 +16,18 @@ export default function useToastify() {
     });
   };
 
+  const errAlert = () => {
+    toast.error("Erreur veuillez réessayer", {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
+
   return { alertMsg, ToastContainer };
 }

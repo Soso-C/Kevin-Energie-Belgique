@@ -1,14 +1,22 @@
 /* eslint-disable react/display-name */
-"use client";
 import React, { forwardRef } from "react";
 
 export const InputForm = forwardRef(
   (
-    { error, inptType, inptId, textLabel, inptName, textarea = false, ...rest },
+    {
+      error,
+      inptType,
+      inptId,
+      textLabel,
+      inptName,
+      textarea = false,
+      large = false,
+      ...rest
+    },
     ref
   ) => {
     return (
-      <div className={`p-2  ${textarea ? "w-full" : "w-1/2"}`}>
+      <div className={`p-2  ${large ? "w-full" : "w-1/2"}`}>
         {textarea ? (
           <div>
             <label className="leading-7 text-sm text-gray-600 font-medium">

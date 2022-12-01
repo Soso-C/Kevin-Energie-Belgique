@@ -28,36 +28,37 @@ export default function EntretienPage() {
               souffrent : eau trop calcaire ou trop acide, résidus de combustion
               pour les chaudières etc…
             </p>
-            <p>Nous intervenons de manière programmée à la demande.</p>
-            <p className="font-bold">Dépannage en urgence.</p>
-            <p className="font-bold">
-              Placement de systèmes de traitement de l’eau et adoucisseurs.
-            </p>
-            <p className="font-bold">
-              Intervention sur le réseau chauffage et sanitaire.
-            </p>
-            <p className="font-bold">
-              Entretien de chaudière / pompe à chaleur / boiler / chauffe-eau /
-              poêle à pellets / insert / cassette
-            </p>
-            {/* <p className="">Entretien pompe à chaleur</p>
-            <p className="">Entretien boiler / chauffe-eau</p>
-            <p className="">Entretiens Poêle à pellets/insert/cassette</p> */}
-            {/* <p className="">Ramonage conduit chaudière</p> */}
-            <p className="font-bold">
-              Ramonage poêle à pellets / insert / cassette / feu ouvert /
-              conduit chaudière
-            </p>
-            <p className="font-bold">
-              Régulation de la pression du circuit de chauffage des radiateurs
-            </p>
-            <p className="font-bold">Réparation chauffe eau en panne.</p>
+            <ul className="list-inside list-disc">
+              <li>Dépannage en urgence.</li>
+              <li>
+                Placement de systèmes de traitement de l’eau et adoucisseurs
+              </li>
+              <li>Intervention sur le réseau chauffage et sanitaire</li>
+
+              <li>
+                Entretien de chaudière / pompe à chaleur / boiler / chauffe-eau
+                / poêle à pellets / insert / cassette
+              </li>
+
+              <li>
+                Ramonage poêle à pellets / insert / cassette / feu ouvert /
+                conduit chaudière
+              </li>
+              <li>
+                Régulation de la pression du circuit de chauffage des radiateurs
+              </li>
+              <li>Réparation chauffe eau en panne.</li>
+            </ul>
             <p>
-              Alors, n'hésitez plus, contactez-nous pour prendre rendez-vous à
-              votre meilleure convenance. Nous nous adaptons en fonction de
-              votre emploi du temps, et nous vous garantissons une intervention
-              dans les plus brefs délais.
+              Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
+              <Link
+                href={"contact"}
+                className="text-orange-500 underline font-medium"
+              >
+                nous contacter.
+              </Link>
             </p>
+            <p>KD Energie se fera un plaisir d'y répondre.</p>
           </ImageAndContentCustom>
         </MainPageService>
       </main>

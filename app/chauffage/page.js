@@ -32,13 +32,15 @@ export default function ChauffagePage() {
               L'entreprise KD Energie se fera un plaisir de vous accompagnez et
               vous orientez pour vos projets de :
             </p>
-            <p>- Dépannage chaudière</p>
-            <p>- Rénovation et l'entretiens chaudières</p>
-            <p>- Radiateur traditionnels et design</p>
-            <p>- Chauffage par le sol</p>
-            <p>- Chauffe-eau et boiler</p>
-            <p>- Tubage / Ramonage de cheminée</p>
-            <p>- Chaudière condensation (mazout, gaz) </p>
+            <ul className="list-inside list-disc space-y-1">
+              <li>Dépannage chaudière</li>
+              <li>Rénovation et l'entretiens chaudières</li>
+              <li>Radiateur traditionnels et design</li>
+              <li>Chauffage par le sol</li>
+              <li>Chauffe-eau et boiler</li>
+              <li>Tubage / Ramonage de cheminée</li>
+              <li>Chaudière condensation (mazout, gaz) </li>
+            </ul>
             <p>
               Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
               <Link

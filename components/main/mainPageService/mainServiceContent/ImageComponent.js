@@ -6,8 +6,8 @@ export default function ImageComponent({ imgContent, title }) {
     <div className={`h-full w-full relative`}>
       <Image
         src={imgContent}
-        alt={`photo de ${title}`}
-        layout="fill"
+        alt={`image de ${title}`}
+        fill
         className="w-full h-full object-cover"
       />
     </div>

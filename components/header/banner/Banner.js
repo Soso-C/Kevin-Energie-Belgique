@@ -7,12 +7,12 @@ export default function Banner({ imgBanner, title }) {
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1] " />
       <Image
         src={imgBanner}
-        alt="image"
+        alt={`image de ${title}`}
         fill
         className="h-full w-full object-cover"
       />
       <div className="absolute z-[1] -translate-x-1/2 left-1/2 top-1/2">
-        <h2 className="font-extrabold text-xl md:text-4xl uppercase text-white">
+        <h2 className="font-extrabold text-xl md:text-4xl uppercase text-white text-center">
           {title}
         </h2>
       </div>

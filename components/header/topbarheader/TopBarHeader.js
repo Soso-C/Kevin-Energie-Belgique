@@ -17,17 +17,17 @@ export default function TopBarHeader() {
         <ul className="flex space-x-4">
           <RightItem
             href={"mailto:contact@kd-energie.be"}
-            icon={<AiFillMail className="h-6 w-6" />}
+            icon={<AiFillMail className="h-5 w-5" />}
             text={"contact@kd-energie.be"}
           />
           <RightItem
             href={"tel:0468381079"}
-            icon={<BsFillTelephoneFill className="h-6 w-6" />}
+            icon={<BsFillTelephoneFill className="h-5 w-5" />}
             text={"0468381079"}
           />
           <RightItem
             href={"https://www.facebook.com/profile.php?id=100086004542543"}
-            icon={<AiFillFacebook className="h-6 w-6" />}
+            icon={<AiFillFacebook className="h-5 w-5" />}
             text={"Facebook"}
           />
         </ul>

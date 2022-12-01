@@ -2,18 +2,24 @@
 import { useForm } from "react-hook-form";
 import { useRef, useState } from "react";
 import InputForm from "./InputForm";
-
-import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 import useToastify from "../../hook/useToastify";
 import useEmail from "../../hook/useEmail";
+
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
   const { ToastContainer } = useToastify();
   const { sendEmail } = useEmail();
 
-  const form = useRef(null);
-  const [captcha, setCaptcha] = useState(false);
+  const formRef = useRef(null);
+
+  const [isVerified, setIsVerified] = useState(false);
+
+  const verifiedRecaptcha = (response) => {
+    if (response) {
+      setIsVerified(true);
+    }
+  };
 
   // React hook Form
   const {
@@ -25,23 +31,17 @@ export default function Form() {
 
   // Onsubmit
   const onSubmit = () => {
-    if (!captcha) {
-      alert("Je ne suis pas un robot doit être coché");
+    if (!isVerified) {
       return;
     }
-    sendEmail(form, setCaptcha);
-  };
-  // Test Captcha simulation
-  const testCaptcha = (e) => {
-    setCaptcha((curr) => (curr = e.target.checked));
-    console.log(captcha);
+    sendEmail(formRef);
   };
 
   return (
     <form
       className="lg:w-1/2 md:w-2/3 mx-auto"
       onSubmit={handleSubmit(onSubmit)}
-      ref={form}
+      ref={formRef}
     >
       {/* Input / Textarea  */}
 
@@ -94,6 +94,22 @@ export default function Form() {
 
         <InputForm
           inptType="text"
+          textLabel="Téléphone"
+          error={errors.user_tel}
+          inptId="user_tel"
+          inptName="user_tel"
+          {...register("user_tel", {
+            required: "Un téléphone est requis",
+            pattern: {
+              value: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/,
+              message: "Entrez un numéro valide",
+            },
+          })}
+        />
+
+        <InputForm
+          large={true}
+          inptType="text"
           textLabel="Titre du message"
           error={errors.user_titleMessage}
           inptId="user_titleMessage"
@@ -108,6 +124,7 @@ export default function Form() {
         />
 
         <InputForm
+          large={true}
           textarea={true}
           textLabel="Message"
           required={true}
@@ -141,22 +158,10 @@ export default function Form() {
         {/* Captcha */}
 
         <div className="flex items-center justify-center w-full mt-8">
-          {/* <ReCAPTCHA
+          <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY}
-            onChange={() => setCaptcha(true)}
-          /> */}
-
-          {/* Captcha  Simulation test*/}
-          <div className="text-white p-4 bg-orange-500 space-x-2 flex items-center justify-center gap-2 font-medium">
-            Je ne suis pas un robot
-            <input
-              type="checkbox"
-              name="captcha"
-              id="captcha"
-              className="h-4 w-4"
-              onChange={testCaptcha}
-            />
-          </div>
+            onChange={verifiedRecaptcha}
+          />
         </div>
       </div>
       <ToastContainer />
