@@ -17,7 +17,7 @@ export default function useToastify() {
   };
 
   const errAlert = () => {
-    toast.error("Erreur veuillez réessayer", {
+    toast.error("Erreur veuillez réessayer ultérieurement", {
       position: "bottom-center",
       autoClose: 5000,
       hideProgressBar: false,

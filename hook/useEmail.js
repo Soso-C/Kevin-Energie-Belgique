@@ -8,7 +8,6 @@ export default function useEmail() {
 
   const sendEmail = (formRef) => {
     const params = formRef.current;
-    console.log(params);
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE,

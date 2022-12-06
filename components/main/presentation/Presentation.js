@@ -18,7 +18,7 @@ export default function Presentation() {
                 alt="Logo KD Energie"
                 src="/logo-kd-energie/logo_flamme.png"
                 fill
-                objectFit="contain"
+                className="object-contain w-full h-full"
               />
             </div>
           </div>

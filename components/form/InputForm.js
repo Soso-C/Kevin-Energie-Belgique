@@ -17,6 +17,7 @@ export const InputForm = forwardRef(
   ) => {
     return (
       <div className={`p-2  ${large ? "w-full" : "w-1/2"}`}>
+        {/* TextArea */}
         {textarea ? (
           <div>
             <label className="leading-7 text-sm text-gray-600 font-medium">
@@ -47,6 +48,7 @@ export const InputForm = forwardRef(
             />
           </div>
         )}
+        {/* Error Span */}
         {error && (
           <span role="alert" className="text-red-500 text-sm font-medium px-1">
             {error.message}

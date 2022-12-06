@@ -9,7 +9,13 @@ export default function ImageSlide({ slide, id, image, index, title }) {
         slide.index === index + 1 ? "opacity-100" : "opacity-0"
       } w-full h-full transition-opacity duration-700 ease-in-out absolute`}
     >
-      <Image src={image} alt={`img ${index}`} objectFit="cover" fill />
+      <Image
+        src={image}
+        alt={`img ${index}`}
+        fill
+        sizes="100vh"
+        className="object-cover h-full"
+      />
       {/* 2nd partie */}
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[4] " />
       <div className="absolute top-[45%] left-1/2 -translate-x-1/2 text-white z-[5]">
