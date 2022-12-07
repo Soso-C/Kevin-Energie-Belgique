@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import useToastify from "./useToastify";
 
 export default function useEmail() {
   const { alertMsg, errAlert } = useToastify();
+  const [showCaptcha, setShowCaptcha] = useState(true);
 
   const sendEmail = (formRef) => {
     const params = formRef.current;
@@ -18,13 +19,13 @@ export default function useEmail() {
       .then(
         (result) => {
           alertMsg();
+          formRef.current.reset();
+          setShowCaptcha(false);
         },
         (error) => {
           errAlert();
         }
       );
-
-    formRef.current.reset();
   };
-  return { sendEmail };
+  return { sendEmail, showCaptcha };
 }

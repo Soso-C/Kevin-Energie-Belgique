@@ -9,11 +9,13 @@ export default function TopBarHeader() {
   return (
     <div className="hidden md:flex flex-col justify-center items-center h-[50px] bg-[#464646] fixed top-0 w-full z-10">
       <div className="flex w-full max-w-[1400px] justify-between items-center mx-auto md:px-4 font-bold text-white">
+        {/* Top left */}
         <div className="text-md">
           <span className="">Chauffage</span> {" - "}
           <span className="">Sanitaire</span> {" - "}
           <span className="">HVAC</span>
         </div>
+        {/* Top Right */}
         <ul className="flex space-x-4">
           <RightItem
             href={"mailto:contact@kd-energie.be"}

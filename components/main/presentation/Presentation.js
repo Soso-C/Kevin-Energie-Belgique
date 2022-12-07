@@ -10,7 +10,7 @@ export default function Presentation() {
         <div className="">
           <h2 className="text-3xl font-bold text-center">KD Energie</h2>
         </div>
-
+        {/* Partie left */}
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2 lg:gap-16">
           <div className="flex-col justify-center hidden lg:flex">
             <div className="relative h-60 overflow-hidden lg:h-80">
@@ -18,11 +18,12 @@ export default function Presentation() {
                 alt="Logo KD Energie"
                 src="/logo-kd-energie/logo_flamme.png"
                 fill
+                sizes="100vw"
                 className="object-contain w-full h-full"
               />
             </div>
           </div>
-
+          {/* Partie droite */}
           <div className="py-10">
             <article className="space-y-4 text-gray-600 text-justify font-medium">
               <p>

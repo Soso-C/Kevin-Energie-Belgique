@@ -10,6 +10,8 @@ export default function Banner({ imgBanner, title }) {
           src={imgBanner}
           alt={`image de ${title}`}
           fill
+          sizes="100vw"
+          priority={true}
           className="h-full w-full object-cover"
         />
       </div>

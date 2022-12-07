@@ -8,6 +8,7 @@ export default function ImageComponent({ imgContent, title }) {
         src={imgContent}
         alt={`image de ${title}`}
         fill
+        sizes="100vw"
         className="w-full h-full object-cover"
       />
     </div>

@@ -9,17 +9,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
   const { ToastContainer } = useToastify();
-  const { sendEmail } = useEmail();
+  const { sendEmail, showCaptcha } = useEmail();
 
   const formRef = useRef(null);
 
   const [isVerified, setIsVerified] = useState(false);
-
-  const verifiedRecaptcha = (response) => {
-    if (response) {
-      setIsVerified(true);
-    }
-  };
 
   // React hook Form
   const {
@@ -28,6 +22,13 @@ export default function Form() {
     watch,
     formState: { errors },
   } = useForm();
+
+  // Si captcha checked alors true
+  const verifiedRecaptcha = (response) => {
+    if (response) {
+      setIsVerified(true);
+    }
+  };
 
   // Onsubmit
   const onSubmit = () => {
@@ -157,12 +158,14 @@ export default function Form() {
 
         {/* Captcha */}
 
-        <div className="flex items-center justify-center w-full mt-8">
-          <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY}
-            onChange={verifiedRecaptcha}
-          />
-        </div>
+        {showCaptcha && (
+          <div className="flex items-center justify-center w-full mt-8">
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY}
+              onChange={verifiedRecaptcha}
+            />
+          </div>
+        )}
       </div>
       <ToastContainer />
     </form>

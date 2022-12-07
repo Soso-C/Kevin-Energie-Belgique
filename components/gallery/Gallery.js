@@ -1,10 +1,9 @@
 "use client";
-
 import { useState } from "react";
 import ImageGallery from "./ImageGallery";
 
 export default function Gallery() {
-  // Image
+  // Image per row
   const imagePerRow = 8;
   const [next, setNext] = useState(imagePerRow);
 
@@ -15,10 +14,23 @@ export default function Gallery() {
     }
     setNext(next + imagePerRow);
   };
+
+  // Si l'array d'images est vide affiche un message d'erreur
+  if (images.length === 0) {
+    return (
+      <div className="min-h-[50vh] flex flex-col items-center justify-center">
+        <h1 className="text-xl text-red-500 font-bold text-center">
+          {
+            "Aucune images n'a pu être trouvée veuillez réssayer ultérieurement."
+          }
+        </h1>
+      </div>
+    );
+  }
   return (
     <>
       <div
-        className={`md:my-10  w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-6 place-items-center `}
+        className={`md:my-10 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 place-items-center `}
       >
         {/* Display images per row */}
         {images &&

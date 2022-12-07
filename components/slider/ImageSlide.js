@@ -13,8 +13,9 @@ export default function ImageSlide({ slide, id, image, index, title }) {
         src={image}
         alt={`img ${index}`}
         fill
-        sizes="100vh"
-        className="object-cover h-full"
+        sizes="100vw"
+        priority={true}
+        className="object-cover h-full w-full"
       />
       {/* 2nd partie */}
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[4] " />
