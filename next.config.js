@@ -5,7 +5,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["kd-energie.be"],
+    domains: ["www.kd-energie.be"],
     deviceSizes: [420, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
 };

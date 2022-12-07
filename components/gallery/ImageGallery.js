@@ -11,7 +11,8 @@ export default function ImageGallery({ src }) {
         src={src}
         alt="photo"
         fill
-        sizes="100vw"
+        priority={true}
+        sizes="100vh"
         className={`h-full w-full object-cover duration-350 ease-in-out group-hover:opacity-75 ${
           isLoading
             ? "scale-105 blur-xl grayscale"
