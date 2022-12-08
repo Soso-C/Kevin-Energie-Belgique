@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true,
+    esmExternals: false,
   },
   images: {
     domains: ["www.kd-energie.be"],
