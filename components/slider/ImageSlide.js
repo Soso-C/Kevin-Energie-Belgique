@@ -32,15 +32,15 @@ export default function ImageSlide({ slide, id, image, index, title }) {
             <Link
               href={
                 slide.index === 1
-                  ? "/pellet"
-                  : slide.index === 2
-                  ? "/pompe-a-chaleur"
-                  : slide.index === 3
                   ? "/chauffage"
-                  : slide.index === 4
+                  : slide.index === 2
                   ? "/sanitaire"
-                  : slide.index === 5
+                  : slide.index === 3
                   ? "/ventilation"
+                  : slide.index === 4
+                  ? "/pompe-a-chaleur"
+                  : slide.index === 5
+                  ? "/pellet"
                   : slide.index === 6
                   ? "/entretien-depannage"
                   : null

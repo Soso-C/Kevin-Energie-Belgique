@@ -59,6 +59,10 @@ export default function Form() {
               value: 2,
               message: "Le nom doit faire 2 caractères minimum",
             },
+            maxLength: {
+              value: 50,
+              message: "Le prénom doit faire 50 caractères maximum",
+            },
           })}
         />
 
@@ -73,6 +77,10 @@ export default function Form() {
             minLength: {
               value: 2,
               message: "Le nom doit faire 2 caractères minimum",
+            },
+            maxLength: {
+              value: 50,
+              message: "Le nom doit faire 50 caractères maximum",
             },
           })}
         />
@@ -120,6 +128,10 @@ export default function Form() {
             minLength: {
               value: 5,
               message: "Le titre doit faire 5 caractères minimum",
+            },
+            maxLength: {
+              value: 100,
+              message: "Le titre doit faire 150 caractères maximum",
             },
           })}
         />

@@ -47,7 +47,7 @@ export default function PompeChaleur() {
             <p>
               Pour tout renseignement ou demande de devis n'hésitez pas à{" "}
               <Link
-                href={"contact"}
+                href={"/contact"}
                 className="text-orange-500 underline font-medium"
               >
                 nous contacter.

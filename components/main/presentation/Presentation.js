@@ -35,7 +35,7 @@ export default function Presentation() {
               </p>
               <p>
                 {`Avec plus de 10 ans d'expérience dans le domaine, nous mettrons
-                tous en oeuvre pour comprendre vos envies, de vous offrir le
+                tout en oeuvre pour comprendre vos envies, de vous offrir le
                 conseil le plus adéquat, notre collaboration débute toujours par
                 une rencontre. Nous explorons votre projet avant de vous
                 remettre un devis détaillé dans le respect de vos critères et de
@@ -46,11 +46,16 @@ export default function Presentation() {
                 soigné et de qualité, au respect de normes techniques.`}
               </p>
               <p>
-                {`Vous souhaitez obtenir de plus amples informations quant au
-                sujet de nos services de plombier-chauffagiste ? N’hésitez pas à
-                prendre contact avec nous. Nous sommes à votre écoute et
-                prendrons le temps nécessaire afin de faire disparaître toutes
-                vos questions.`}
+                Vous souhaitez obtenir de plus amples informations quant au
+                sujet de nos services de plombier-chauffagiste ? N’hésitez pas à{" "}
+                <Link
+                  href={"/contact"}
+                  className="text-orange-500 underline font-medium"
+                >
+                  prendre contact avec nous.{" "}
+                </Link>
+                Nous sommes à votre écoute et prendrons le temps nécessaire afin
+                de faire disparaître toutes vos questions.
               </p>
               <div className="flex items-center justify-center pt-10">
                 <OrangeBtn large={true}>

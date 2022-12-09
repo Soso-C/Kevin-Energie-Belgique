@@ -20,7 +20,7 @@ export default function ImageGallery({ src, onclick }) {
   return (
     <>
       {modalToggle && <ImageModal url={src} onclick={handleClickImage} />}
-      <div className="w-full h-52 shadow-sm relative">
+      <div className="w-full h-52 shadow-sm relative hover:scale-105 duration-300">
         <Image
           src={src}
           alt="photo réalisations"
