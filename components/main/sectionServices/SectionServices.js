@@ -14,13 +14,6 @@ export default function SectionServices() {
         <h2 className="text-center text-2xl font-bold">Nos Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full justify-center gap-6 px-4 mt-16">
           <SectionItem
-            icon={<FaHome className="h-8 w-8" />}
-            href="/sanitaire"
-            title="Sanitaire"
-            img={"/sanitaire.jpg"}
-            text="Installation et rénovation de boiler, salle de bain, évier, robinetterie, WC, ..."
-          />
-          <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href={"/chauffage"}
             title="Chauffage"
@@ -28,11 +21,18 @@ export default function SectionServices() {
             text="Installation et rénovation de chaudières (mazout, gaz), radiateur, chauffage sol, ..."
           />
           <SectionItem
-            icon={<IoFlame className="h-8 w-8" />}
-            href="/pellet"
-            title="Pellets"
-            img={"/pellet.jpg"}
-            text="Installation et rénovation de poêle à pellets, tubage de cheminée, ..."
+            icon={<FaHome className="h-8 w-8" />}
+            href="/sanitaire"
+            title="Sanitaire"
+            img={"/sanitaire.jpg"}
+            text="Installation et rénovation de boiler, salle de bain, évier, robinetterie, WC, ..."
+          />
+          <SectionItem
+            icon={<TbWindmill className="h-8 w-8" />}
+            href="/ventilation"
+            title="Ventilation"
+            img={"/ventilation.jpg"}
+            text="Installation et rénovation de ventilation à simple ou double flux."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
@@ -42,11 +42,11 @@ export default function SectionServices() {
             text="Installation et rénovation de pompe à chaleur (air-eau, split, monobloc), ..."
           />
           <SectionItem
-            icon={<TbWindmill className="h-8 w-8" />}
-            href="/ventilation"
-            title="Ventilation"
-            img={"/ventilation.jpg"}
-            text="Installation et rénovation de ventilation à simple ou double flux."
+            icon={<IoFlame className="h-8 w-8" />}
+            href="/pellet"
+            title="Pellets"
+            img={"/pellet.jpg"}
+            text="Installation et rénovation de poêle à pellets, tubage de cheminée, ..."
           />
           <SectionItem
             icon={<BsTools className="h-8 w-8" />}

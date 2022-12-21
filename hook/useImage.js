@@ -29,5 +29,5 @@ export default function useImage() {
     setNext(next + imagePerRow);
   };
 
-  return { getImages, handleMoreImage, images, next };
+  return { handleMoreImage, images, setImages, next };
 }

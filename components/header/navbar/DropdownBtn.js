@@ -48,9 +48,9 @@ export default function DropdownBtn() {
 
 const dropDownData = [
   { id: 1, title: "Chauffage", href: "/chauffage" },
-  { id: 2, title: "Ventilation", href: "/ventilation" },
-  { id: 3, title: "Pompe à chaleur", href: "/pompe-a-chaleur" },
-  { id: 4, title: "Sanitaire", href: "/sanitaire" },
+  { id: 2, title: "Sanitaire", href: "/sanitaire" },
+  { id: 3, title: "Ventilation", href: "/ventilation" },
+  { id: 4, title: "Pompe à chaleur", href: "/pompe-a-chaleur" },
   { id: 5, title: "Pellets", href: "/pellet" },
   { id: 6, title: "Entretien et dépannage", href: "/entretien-depannage" },
 ];

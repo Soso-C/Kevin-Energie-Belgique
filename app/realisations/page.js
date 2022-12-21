@@ -4,6 +4,23 @@ import TopBarHeader from "../../components/header/topbarheader/TopBarHeader";
 import Footer from "../../components/footer/Footer";
 import Gallery from "../../components/gallery/Gallery";
 
+// import fs from "fs";
+
+// const getImagesFolder = () => {
+//   const folderName = "testfolder/";
+//   const storeFiles = fs.readdirSync(folderName);
+//   let arrayFiles = [];
+
+//   storeFiles.forEach((file) => {
+//     if (!file) return;
+//     return arrayFiles.push({
+//       src: "/" + folderName + file,
+//       nom: file,
+//     });
+//   });
+//   return arrayFiles;
+// };
+
 export default function page() {
   return (
     <div>

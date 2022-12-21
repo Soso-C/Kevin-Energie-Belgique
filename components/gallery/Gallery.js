@@ -3,15 +3,15 @@ import ImageGallery from "./ImageGallery";
 import useImage from "../../hook/useImage";
 
 export default function Gallery() {
-  const { getImages, handleMoreImage, images, next, isLoading } = useImage();
+  const { handleMoreImage, images, next, isLoading } = useImage();
 
-  // Message si pas d'images
-  // if (images.length === 0)
-  //   return (
-  //     <p className="h-[50vh] text-center text-xl text-red-600">
-  //       {"Aucune images n'a pu être trouvée veuillez réssayer ultérieurement."}
-  //     </p>
-  //   );
+  //Message si pas d'images
+  if (images.length === 0)
+    return (
+      <p className="h-[50vh] text-center text-xl text-red-600">
+        {"Aucune images n'a pu être trouvée veuillez réssayer ultérieurement."}
+      </p>
+    );
 
   return (
     <>

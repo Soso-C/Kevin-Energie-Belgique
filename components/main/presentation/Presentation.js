@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import OrangeBtn from "../../button/orangeButton/OrangeBtn";
+import logoFlamme from "/public/logo-kd-energie/logo_flamme.png";
 
 export default function Presentation() {
   return (
@@ -16,7 +17,7 @@ export default function Presentation() {
             <div className="relative h-60 overflow-hidden lg:h-80">
               <Image
                 alt="Logo KD Energie"
-                src="/logo-kd-energie/logo_flamme.png"
+                src={logoFlamme}
                 fill
                 sizes="100vw"
                 className="object-contain w-full h-full"

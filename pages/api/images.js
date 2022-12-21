@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   storeFiles.forEach((file) => {
     if (!file) return;
     return arrayFiles.push({
-      src: process.env.NEXT_PUBLIC_API_URL + "realisations/" + file,
+      src: "http://localhost:3000" + "/realisations/" + file,
       nom: file,
     });
   });
