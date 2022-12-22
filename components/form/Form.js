@@ -1,6 +1,6 @@
 "use client";
-import { useForm } from "react-hook-form";
 import { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
 import InputForm from "./InputForm";
 import useToastify from "../../hook/useToastify";
 import useEmail from "../../hook/useEmail";
@@ -11,7 +11,7 @@ export default function Form() {
   const { ToastContainer } = useToastify();
   const { sendEmail, showCaptcha } = useEmail();
 
-  const formRef = useRef(null);
+  const formRef = useRef();
 
   const [isVerified, setIsVerified] = useState(false);
 

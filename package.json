@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "export": "next export",
     "start2": "next start",
     "lint": "next lint"
   },
@@ -17,7 +18,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-google-recaptcha": "^2.1.0",
-    "react-hook-form": "^7.40.0",
+    "react-hook-form": "^7.41.0",
     "react-icons": "^4.6.0",
     "react-toastify": "^9.1.1",
     "sharp": "^0.31.2"
