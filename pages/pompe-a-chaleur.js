@@ -7,10 +7,14 @@ import ImageAndContentCustom from "../components/main/mainPageService/mainServic
 import imgBanner from "/public/pompe_a_chaleur.png";
 import imgMain from "/public/pompe_a_chaleur2.png";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function PompeChaleur() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Pompe à chaleur</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Pompe à chaleur"} />
       </header>

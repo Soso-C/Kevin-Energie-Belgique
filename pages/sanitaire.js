@@ -6,10 +6,14 @@ import Footer from "../components/footer/Footer";
 import imgBanner from "/public/sanitaire.jpg";
 import imgMain from "/public/sanitaire2.png";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function SanitairePage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Sanitaire</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Sanitaire"} />
       </header>

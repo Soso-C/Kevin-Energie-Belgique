@@ -6,10 +6,14 @@ import Footer from "../components/footer/Footer";
 import Link from "next/link";
 import imgBanner from "/public/chaudiere.jpg";
 import imgMain from "/public/chauffage.png";
+import Head from "next/head";
 
 export default function ChauffagePage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Chauffage</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Chauffage"} />
       </header>

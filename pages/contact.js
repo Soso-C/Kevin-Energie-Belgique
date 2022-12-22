@@ -5,7 +5,9 @@ import ContactForm from "../components/form/ContactForm";
 export default function Contact() {
   return (
     <div>
-      <Head></Head>
+      <Head>
+        <title>KD Energie | Contact</title>
+      </Head>
       <ContactForm />
     </div>
   );

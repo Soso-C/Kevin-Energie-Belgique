@@ -6,10 +6,14 @@ import Footer from "../components/footer/Footer";
 import imgBanner from "/public/pellet.jpg";
 import imgMain from "/public/pellet2.png";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function PelletPage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Pellets</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Pellets"} />
       </header>

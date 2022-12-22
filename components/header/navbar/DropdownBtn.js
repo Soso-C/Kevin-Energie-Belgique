@@ -37,7 +37,7 @@ export default function DropdownBtn() {
         >
           <div className="p-2">
             {dropDownData.map((item) => {
-              return <DropDownItem key={item.id} {...item} />;
+              return <DropDownItem key={item.id} {...item} setOpen={setOpen} />;
             })}
           </div>
         </div>
@@ -55,12 +55,13 @@ const dropDownData = [
   { id: 6, title: "Entretien et dépannage", href: "/entretien-depannage" },
 ];
 
-const DropDownItem = ({ href, title }) => {
+const DropDownItem = ({ href, title, setOpen }) => {
   return (
     <Link
       href={href}
       className="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-orange-500"
       role="menuitem"
+      onClick={() => setOpen(false)}
     >
       {title}
     </Link>

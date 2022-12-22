@@ -6,10 +6,14 @@ import Footer from "../components/footer/Footer";
 import imgBanner from "/public/entretien.jpg";
 import Link from "next/link";
 import imgMain from "/public/entretien2.png";
+import Head from "next/head";
 
 export default function EntretienPage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Entretien et dépannage</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Entretien & Dépannage"} />
       </header>

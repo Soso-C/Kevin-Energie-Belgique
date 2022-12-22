@@ -5,10 +5,14 @@ import ImageAndContentCustom from "../components/main/mainPageService/mainServic
 import Footer from "../components/footer/Footer";
 import imgBanner from "/public/ventilation.jpg";
 import imgMain from "/public/ventilation2.jpg";
+import Head from "next/head";
 
 export default function VentilationPage() {
   return (
     <div className="bg-gray-50">
+      <Head>
+        <title>KD Energie | Ventilation</title>
+      </Head>
       <header>
         <Banner imgBanner={imgBanner} title={"Ventilation"} />
       </header>
