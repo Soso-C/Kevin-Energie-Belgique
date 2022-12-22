@@ -5,6 +5,7 @@ import ImageAndContentCustom from "/components/main/mainPageService/mainServiceC
 import Footer from "../components/footer/Footer";
 import Link from "next/link";
 import imgBanner from "/public/chaudiere.jpg";
+import imgMain from "/public/chauffage.png";
 
 export default function ChauffagePage() {
   return (
@@ -16,10 +17,7 @@ export default function ChauffagePage() {
         <MainPageService
           title={"Installation de chaudière et système de chauffage"}
         >
-          <ImageAndContentCustom
-            title={"chauffage"}
-            imgContent={"/chauffage.png"}
-          >
+          <ImageAndContentCustom title={"chauffage"} imgContent={imgMain}>
             <p>
               Que votre projet soit une nouvelle construction, une rénovation,
               une maison unifamiliale ou un bâtiment de plus grande envergure,

@@ -4,8 +4,8 @@ import MainPageService from "/components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "/components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../components/footer/Footer";
 import imgBanner from "/public/entretien.jpg";
-import imgMain from "/public/entretien2.png";
 import Link from "next/link";
+import imgMain from "/public/entretien2.png";
 
 export default function EntretienPage() {
   return (
