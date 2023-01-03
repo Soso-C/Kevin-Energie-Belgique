@@ -46,6 +46,7 @@ export default function DropdownBtn() {
   );
 }
 
+// Data links
 const dropDownData = [
   { id: 1, title: "Chauffage", href: "/chauffage" },
   { id: 2, title: "Sanitaire", href: "/sanitaire" },
@@ -55,6 +56,7 @@ const dropDownData = [
   { id: 6, title: "Entretien et dépannage", href: "/entretien-depannage" },
 ];
 
+// Links
 const DropDownItem = ({ href, title, setOpen }) => {
   return (
     <Link

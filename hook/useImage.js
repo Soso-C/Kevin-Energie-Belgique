@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function useImage() {
   const imagePerRow = 8;
-  const url = process.env.NEXT_PUBLIC_API_URL + "/api/images";
+  const url = "/api/images";
 
   const [images, setImages] = useState([]);
   // const [isLoading, setLoading] = useState(false);

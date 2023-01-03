@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   storeFiles.forEach((file) => {
     if (!file) return;
     return arrayFiles.push({
-      src: "http://localhost:3000" + "/realisations/" + file,
+      src: "/realisations/" + file,
       nom: file,
     });
   });
