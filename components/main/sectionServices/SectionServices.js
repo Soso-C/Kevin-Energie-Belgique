@@ -17,42 +17,42 @@ export default function SectionServices() {
             icon={<IoFlame className="h-8 w-8" />}
             href={"/chauffage"}
             title="Chauffage"
-            img={"/chaudiere.jpg"}
+            img={"/bannerAndSlider/chaudiere.jpg"}
             text="Installation et rénovation de chaudières (mazout, gaz), radiateur, chauffage sol, ..."
           />
           <SectionItem
             icon={<FaHome className="h-8 w-8" />}
             href="/sanitaire"
             title="Sanitaire"
-            img={"/sanitaire.jpg"}
+            img={"/bannerAndSlider/sanitaire.jpg"}
             text="Installation et rénovation de boiler, salle de bain, évier, robinetterie, WC, ..."
           />
           <SectionItem
             icon={<TbWindmill className="h-8 w-8" />}
             href="/ventilation"
             title="Ventilation"
-            img={"/ventilation.jpg"}
+            img={"/bannerAndSlider/ventilation.jpg"}
             text="Installation et rénovation de ventilation à simple ou double flux."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/pompe-a-chaleur"
             title="Pompe à chaleur"
-            img={"/pompe_a_chaleur.png"}
+            img={"/bannerAndSlider/pompe_a_chaleur.png"}
             text="Installation et rénovation de pompe à chaleur (air-eau, split, monobloc), ..."
           />
           <SectionItem
             icon={<IoFlame className="h-8 w-8" />}
             href="/pellet"
             title="Pellets"
-            img={"/pellet.jpg"}
+            img={"/bannerAndSlider/pellet.jpg"}
             text="Installation et rénovation de poêle à pellets, tubage de cheminée, ..."
           />
           <SectionItem
             icon={<BsTools className="h-8 w-8" />}
-            href="/entretien-depanage"
+            href="/entretien-depannage"
             title="Entretien / Dépanage"
-            img={"/entretien.jpg"}
+            img={"/bannerAndSlider/entretien.jpg"}
             text="Entretien et dépannage de chaudière, sanitaire, ventilation, poêle, ramonage, ..."
           />
         </div>

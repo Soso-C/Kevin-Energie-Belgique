@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function useImage() {
   const imagePerRow = 8;
-  const url = "/api/images";
+  const url = "https://kd-energie.be/imgRealisations/realisations.php";
 
   const [images, setImages] = useState([]);
   // const [isLoading, setLoading] = useState(false);
@@ -17,7 +17,7 @@ export default function useImage() {
     await fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        setImages(data.images);
+        setImages(data);
       });
   }
 

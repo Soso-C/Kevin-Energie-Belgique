@@ -4,8 +4,8 @@ import Banner from "../components/header/banner/Banner";
 import Footer from "../components/footer/Footer";
 import MainPageService from "../components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "../components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
-import imgBanner from "/public/pompe_a_chaleur.png";
-import imgMain from "/public/pompe_a_chaleur2.png";
+import imgBanner from "/public/bannerAndSlider/pompe_a_chaleur.png";
+import imgMain from "/public/bannerAndSlider/pompe_a_chaleur2.png";
 import Link from "next/link";
 import Head from "next/head";
 

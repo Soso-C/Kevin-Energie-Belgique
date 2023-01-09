@@ -3,8 +3,8 @@ import Banner from "/components/header/banner/Banner";
 import MainPageService from "/components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "/components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../components/footer/Footer";
-import imgBanner from "/public/pellet.jpg";
-import imgMain from "/public/pellet2.png";
+import imgBanner from "/public/bannerAndSlider/pellet.jpg";
+import imgMain from "/public/bannerAndSlider/pellet2.png";
 import Link from "next/link";
 import Head from "next/head";
 

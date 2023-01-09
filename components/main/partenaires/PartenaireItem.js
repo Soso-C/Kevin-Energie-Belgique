@@ -8,7 +8,6 @@ export default function PartenaireItem({ img }) {
         src={img}
         className="object-contain w-full h-full"
         fill
-        sizes="100vw"
         alt="logo"
       />
     </div>

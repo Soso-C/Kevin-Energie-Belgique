@@ -4,8 +4,8 @@ import MainPageService from "/components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "/components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../components/footer/Footer";
 import Link from "next/link";
-import imgBanner from "/public/chaudiere.jpg";
-import imgMain from "/public/chauffage.png";
+import imgBanner from "/public/bannerAndSlider/chaudiere.jpg";
+import imgMain from "/public/bannerAndSlider/chauffage.png";
 import Head from "next/head";
 
 export default function ChauffagePage() {

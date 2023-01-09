@@ -3,8 +3,8 @@ import Banner from "/components/header/banner/Banner";
 import MainPageService from "../components/main/mainPageService/MainPageService";
 import ImageAndContentCustom from "../components/main/mainPageService/mainServiceContent/ImageAndContentCustom";
 import Footer from "../components/footer/Footer";
-import imgBanner from "/public/sanitaire.jpg";
-import imgMain from "/public/sanitaire2.png";
+import imgBanner from "/public/bannerAndSlider/sanitaire.jpg";
+import imgMain from "/public/bannerAndSlider/sanitaire2.png";
 import Link from "next/link";
 import Head from "next/head";
 
